@@ -1,0 +1,6 @@
+title: Triggevent, an FFXIV Addon
+tagline: Triggevent - an Everything Addon for FFXIV
+description: Triggevent is a comprehensive addon for FFXIV that provides cooldown and multi-target DoT tracking, easy triggers, jail/gaol plugin.
+theme: jekyll-theme-midnight
+github:
+  repository_url: https://github.com/xpdota/event-trigger
