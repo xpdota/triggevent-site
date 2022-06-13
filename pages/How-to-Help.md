@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "How to Help"
-permalink: /pages/Hot-to-Help/
+permalink: /pages/How-to-Help/
 description: If you like Triggevent, here's how you can help out.
 ---
 

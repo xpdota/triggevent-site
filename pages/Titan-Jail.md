@@ -2,7 +2,7 @@
 layout: default
 title: "Titan Jail Plugin"
 permalink: /pages/Titan-Jail/
-description: Triggevent is an FFXIV addon with an easy Titan Jail plugin, with both personal callouts and automarks (compare to Jail_plugin.dll and Triggernometry)
+description: Triggevent is an FFXIV addon with an easy UWU Titan Jail plugin (both personal callouts and automarks - compare to Jail_plugin.dll and Triggernometry)
 ---
 
 [//]: # (Title: Triggevent Titan Gaol / Jail Plugin / Automarker)
@@ -17,7 +17,7 @@ description: Triggevent is an FFXIV addon with an easy Titan Jail plugin, with b
 
 Or titan jail plugin. Whichever way you want to spell it.
 
-Tired of bad gaol plugins that constantly break, are difficult to test, or require manually entering names? You've come
+Tired of bad UWU gaol plugins that constantly break, are difficult to test, or require manually entering names? You've come
 to the right place. Now you can have one single plugin that covers both personal callouts and auto-marks with 
 drag-and-drop job priority.
 
@@ -35,7 +35,7 @@ Advanced > Party and make the sorting match your in-game list. Or, you can insta
 Plugin Settings > Telesto tab. This will pull the party list from the game itself (restart the program or 
 reinstance after enabling this if it still isn't grabbing the correct list). 
 
-Then, on the Plugin Settings > Titan Gaols tab, drag the list to arrange your priority. Note that if multiple people
+Then, on the Plugin Settings > Titan Gaols tab, drag the list to arrange your job priority. Note that if multiple people
 plan to run the personal callouts, they should all have the same order. Note that simply using the default order (which
 is melee > tanks > caster > ranged > healer) is the easiest way to do this - just hit "Reset Order".
 
@@ -104,4 +104,4 @@ this.
 To test gaols specifically, if you are in the instance, you can do something like `/e jailtest 3 2 8` which will 
 simulate jails on the third, second, and eighth player in the party. You can do this out of the instance as well 
 (though you must not be in a normal party, not cross-world), and you must enable the "Override Zone Lock" setting on 
-the Titan Gaols tab.
+the Titan Gaols tab (it is normally only enabled in the Weapon's Refrain instance).
