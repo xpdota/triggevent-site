@@ -182,6 +182,7 @@ Should you require any assistance, you can:
 # Site Map
 
 - [Main Page](/)
+- [Troubleshooting Guide](/pages/Troubleshooting.md)
 - [The Problems with Existing Solutions (or: Why I was spurred to make this)](/pages/The-Problems-with-Existing-Solutions.md)
 - [How Triggevent is Different](/pages/How-Triggevent-is-Different.md)
 - [Telesto Support](/pages/Telesto-Support.md)
