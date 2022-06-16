@@ -18,7 +18,7 @@ description: Triggevent is an FFXIV addon with an easy UWU Titan Jail plugin (bo
 Or titan jail plugin. Whichever way you want to spell it.
 
 Tired of bad UWU gaol plugins that constantly break, are difficult to test, or require manually entering names? You've come
-to the right place. Now you can have one single plugin that covers both personal callouts and auto-marks with 
+to the right place. Now you can have one single plugin that covers both personal callouts and automarkers with 
 drag-and-drop job priority.
 
 ## Overview
