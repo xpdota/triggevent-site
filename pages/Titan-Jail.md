@@ -35,19 +35,32 @@ Advanced > Party and make the sorting match your in-game list. Or, you can insta
 Plugin Settings > Telesto tab. This will pull the party list from the game itself (restart the program or 
 reinstance after enabling this if it still isn't grabbing the correct list). 
 
+Then, read on below to configure the priority and choose whether you'd like personal callouts, automarkers, or
+both.
+
+#### Job Priority for Jails
+
 Then, on the Plugin Settings > Titan Gaols tab, drag the list to arrange your job priority. Note that if multiple people
 plan to run the personal callouts, they should all have the same order. Note that simply using the default order (which
 is melee > tanks > caster > ranged > healer) is the easiest way to do this - just hit "Reset Order".
 
 On the right, your party list will show up. This will tell you the actual effective priority for your particular party.
 
+Higher in the prio means you are favored for the low numbers (typically closer to Titan). 
+Further down means you are prioritized for having the
+high-numbered jails (traditionally, towards the outside of the arena).
+
 ### Personal Callouts
 
-If you want personal callouts, equivalent to the standalone Titan Jail plugin, simply click "Enable Personal Callouts".
+If you want personal callouts, equivalent to the standalone Titan Jail plugin (Jail_Plugin.dll), 
+simply click "Enable Personal Callouts". It is very important that everyone use the same ordering
+for this, as everyone's client will calculate the order on its own. This is interoperable with Jail_plugin.dll,
+if you simply set the same priority order.
 
-### Automarkers
+### Jail Automarkers
 
-If you want titan jail automarkers, you'll need to do one of three options:
+If you want titan gaol automarkers (equivalent to the King Pendragon FFXIVJobPrioGaolAutoMarker and previous iterations), 
+you'll need to do one of three options:
 - Telesto
 - Macros on Numpad1-9
 - Macros on F1-F9
@@ -56,7 +69,8 @@ Head on over to the "AutoMark" tab, and choose your settings accordingly:
 
 ![Automarks Configuration Panel](auto-marks.png)
 
-Telesto is the easiest option. Just install it, then check 'Use Telesto...'.
+Telesto is the easiest option. Just install it, then check 'Use Telesto...'. You can also read more on the 
+[Telesto Support](/pages/Telesto-Support.md) page about how to set up and test Telesto.
 
 To use macros instead, choose whether you want to use F1-F9 or Numpad1-9, and check/uncheck the 'Use F1-F9' checkbox
 accordingly. Then, in-game, make a hotbar bound to those keys, with the following macros:
@@ -97,11 +111,48 @@ Numpad9 / F9:
 
 ## Testing It
 
-To test the macro alone, you can use the in-game command `/e amtest 1` which will mark yourself. `/e amtest 1 3 5`, 
+To test the macro alone, you can use the in-game command `/e c:amtest 1` which will mark yourself. `/e c:amtest 1 3 5`, 
 for example, would mark the first, third, and fifth members of the party. You do not need to be in the instance for 
-this.
+this. If you only mark yourself (i.e. `/e c:amtest 1`), you don't need to be in a party either. 
 
-To test gaols specifically, if you are in the instance, you can do something like `/e jailtest 3 2 8` which will 
+To test gaols specifically, if you are in the instance, you can do something like `/e c:jailtest 3 2 8` which will 
 simulate jails on the third, second, and eighth player in the party. You can do this out of the instance as well 
 (though you must not be in a normal party, not cross-world), and you must enable the "Override Zone Lock" setting on 
 the Titan Gaols tab (it is normally only enabled in the Weapon's Refrain instance).
+
+## Troubleshooting
+
+First, try `/e c:amtest 1` in-game. If this doesn't work, here are things to check:
+* Is Triggevent receiving any data from ACT? Try using some abilities, and check that they show up
+  on the "Events" tab.
+* If using Telesto: Go to the Telesto tab (under the "Plugin Settings" tab), and click the "Test" button.
+* If using macros: Consider switching to Telesto. Otherwise, check if the macro is getting hit at all -
+  the purpose of the '/e' line in the macros is to put some text in your chat log so that you can see if 
+  the macro is being used or not.
+
+If using Telesto, the "Events" tab should display the following after doing `/e c:amtest 1`:
+
+![Successful Telesto Automark Events](telesto-am-success.png)
+
+If using Macros, it should display something like this:
+
+![Macro AM Success](macro-am-success.png)
+
+If this works, next, go to the Titan Jail plugin configuration, and check "Override Zone Lock".
+Then, do `/e c:jailtest 1 1 1`. This will simulate getting all three gaols on yourself.
+Note that you will need to do `/e c:jailreset` to simulate a wipe before using the jailtest
+command again.
+
+You should see something like this:
+
+![Successful Jail Test](Jailtest.png)
+
+The last thing to check is to use a few abilities on a dummy, and make sure that they
+show up on the events tab. After game update, sometimes chat logs will still work while
+abilities and such will break until the ACT parsing plugin is updated.
+
+### It Worked, but Marked Wrong Players
+
+This is almost always an issue of incorrect party list sorting. The easiest fix is to 
+[use Telesto for your party list](/pages/Telesto-Support.md). If you don't want to use
+Telesto, go to Advanced > Party

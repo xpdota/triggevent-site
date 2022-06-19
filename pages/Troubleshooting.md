@@ -81,3 +81,7 @@ This can be caused by two different things:
 will not work as a result.
 2. You need to tell Triggevent which player to consider "You". To do so, play some events until the party list shows
 up on the General tab, and then right-click a player and select "Set as primary player".
+
+## Jail/Automark Issues
+
+See [Titan Jail Troubleshooting](/pages/Titan-Jail.md#Troubleshooting)
