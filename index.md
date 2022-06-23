@@ -186,6 +186,11 @@ Should you require any assistance, you can:
 - [The Problems with Existing Solutions (or: Why I was spurred to make this)](/pages/The-Problems-with-Existing-Solutions.md)
 - [How Triggevent is Different](/pages/How-Triggevent-is-Different.md)
 - [Telesto Support](/pages/Telesto-Support.md)
-- [Titan Gaol Guide](/pages/Titan-Jail.md)
 - [More documentation on the Wiki](https://github.com/xpdota/event-trigger/wiki)
 - [How to Help Out](/pages/How-to-Help.md)
+- Overlays and Features:
+    - [Cooldown Tracker](/pages/Cooldown-Tracker.md)
+    - [DoT Tracker](/pages/Dot-Tracker.md)
+- Specific Duties:
+    - [Titan Gaol Guide](/pages/Titan-Jail.md)
+    - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md)

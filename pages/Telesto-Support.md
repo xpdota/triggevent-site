@@ -7,7 +7,8 @@ description: Triggevent is an FFXIV addon that provides an easy way to make use 
 
 # Telesto Support
 
-Telesto is a Dalamud plugin that allows certain commands to be sent directly to the game, with the obvious and most common use case being 
+[Telesto](https://github.com/paissaheavyindustries/Telesto) is a Dalamud plugin that allows certain commands to be sent directly 
+to the game, with the obvious and most common use case being 
 the ability to use automarkers without setting up macros. It also supports pulling the party list from the game directly,
 which is great because ACT (and by extension, both Triggernometry and OverlayPlugin) doesn't tell us the *order* of the party list.
 In addition, Triggernometry also used to have some party list bugs on top of that.
