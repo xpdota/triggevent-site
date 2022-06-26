@@ -37,4 +37,10 @@ fake actors will usually have the same name ID as the real one.
 
 The reason you likely haven't heard of these is because they're not in the log line where the NPC actually *does* something - that's the entity ID.
 NPC IDs are only in 03-lines (AddCombatant), and the getCombatants data from ACT/OverlayPlugin. As such, most trigger solutions don't make use of it.
-However, it is a very convenient way to uniquely identify bosses.
+However, it is a very convenient way to uniquely identify bosses, as well as separating "real" actors from "fake" ones.
+
+#### Don't Rely on NPC Names for Fake Actors
+
+NPC names for fake actors may change on the fly. Often times, this change occurs at the same time as an interesting event (e.g. an ability cast),
+but whether ACT puts the old name or the new name in the log line is not something that can be relied upon. This goes for both the literal name, as
+well as the NPC Name ID (in Triggevent, the name ID will almost always be the old name).
