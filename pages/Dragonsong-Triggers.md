@@ -2,7 +2,7 @@
 layout: default
 title: "Dragonsong's Reprise Triggers"
 permalink: /pages/Dragonsong-Triggers/
-description: Triggevent is an FFXIV with comprehensive Dragonsong's Reprise (Dragonsong War Ultimate) triggers, including optional automarks
+description: Triggevent is an FFXIV plugin with comprehensive Dragonsong's Reprise (Dragonsong War Ultimate) triggers, including optional automarks
 ---
 
 # Dragonsong War
