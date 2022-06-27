@@ -2,7 +2,7 @@
 layout: default
 title: "Titan Jail Plugin"
 permalink: /pages/Titan-Jail/
-description: Triggevent is an FFXIV addon with an easy UWU Titan Jail plugin (both personal callouts and automarks - compare to Jail_plugin.dll and Triggernometry)
+description: Triggevent is an FFXIV addon with an easy UWU Titan Jail plugin (both personal callouts and automarks - compare to ACT Jail_plugin.dll and Triggernometry)
 ---
 
 [//]: # (Title: Triggevent Titan Gaol / Jail Plugin / Automarker)
@@ -21,6 +21,7 @@ Tired of bad FFXIV UWU gaol plugins that constantly break, are difficult to test
 You've come to the right place.
 Now you can have one single plugin that covers both personal callouts and automarkers with
 drag-and-drop job priority.
+You can use classic-style titan gaol macros, or you can use Telesto to skip that step and save a hotbar.
 
 ## Overview
 
@@ -74,7 +75,8 @@ Head on over to the "AutoMark" tab, and choose your settings accordingly:
 Telesto is the easiest option. Just install it, then check 'Use Telesto...'. You can also read more on the
 [Telesto Support](/pages/Telesto-Support.md) page about how to set up and test Telesto.
 
-To use macros instead, choose whether you want to use F1-F9 or Numpad1-9, and check/uncheck the 'Use F1-F9' checkbox
+To use macros for the gaols instead, choose whether you want to use F1-F9 or Numpad1-9, 
+and check/uncheck the 'Use F1-F9' checkbox
 accordingly. Then, in-game, make a hotbar bound to those keys, with the following macros:
 
 Numpad1 / F1:
@@ -116,8 +118,8 @@ Numpad9 / F9:
 
 ## Testing It
 
-To test the macro alone, you can use the in-game command `/e c:amtest 1` which will mark yourself. `/e c:amtest 1 3 5`,
-for example, would mark the first, third, and fifth members of the party. You do not need to be in the instance for
+To test that your jail macros are set up and keybound correctly, you can use the in-game command `/e c:amtest 1` which will mark yourself. 
+`/e c:amtest 1 3 5`, for example, would mark the first, third, and fifth members of the party. You do not need to be in the instance for
 this. If you only mark yourself (i.e. `/e c:amtest 1`), you don't need to be in a party either.
 
 To test gaols specifically, if you are in the instance, you can do something like `/e c:jailtest 3 2 8` which will

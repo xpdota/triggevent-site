@@ -192,6 +192,7 @@ Should you require any assistance, you can:
 - Overlays and Features:
     - [Cooldown Tracker](/pages/Cooldown-Tracker.md)
     - [DoT Tracker](/pages/Dot-Tracker.md)
+    - [Timeline Customization](/pages/Timeline-Customization.md)
 - Specific Duties:
     - [Titan Gaol Guide](/pages/Titan-Jail.md)
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md)

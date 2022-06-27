@@ -2,7 +2,7 @@
 layout: default
 title: "DoT Tracker"
 permalink: /pages/Dot-Tracker/
-description: Triggevent provides an excellent multi-target DoT tracker for FFXIV, with both overlays and TTS callouts.
+description: Triggevent provides an excellent multi-target DoT tracker for FFXIV, with overlays, callouts, and a tick tracker built in.
 ---
 
 # Multi-Target DoT Tracker
