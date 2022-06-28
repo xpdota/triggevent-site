@@ -73,7 +73,7 @@ Head on over to the "AutoMark" tab, and choose your settings accordingly:
 ![FFXIV UWU Titan Gaol Automarker Configuration Panel](auto-marks.png)
 
 Telesto is the easiest option. Just install it, then check 'Use Telesto...'. You can also read more on the
-[Telesto Support](/pages/Telesto-Support.md) page about how to set up and test Telesto.
+[Telesto Support](Telesto-Support.md) page about how to set up and test Telesto.
 
 To use macros for the gaols instead, choose whether you want to use F1-F9 or Numpad1-9, 
 and check/uncheck the 'Use F1-F9' checkbox
@@ -185,7 +185,7 @@ abilities and such will break until the ACT parsing plugin is updated.
 ### It Worked, but Marked Wrong Players
 
 This is almost always an issue of incorrect party list sorting. The easiest fix is to
-[use Telesto for your party list](/pages/Telesto-Support.md). If you don't want to use
+[use Telesto for your party list](Telesto-Support.md). If you don't want to use
 Telesto, go to Advanced > Party and make sure it is configured exactly the same as your
 in-game party sort.
 

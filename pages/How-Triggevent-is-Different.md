@@ -7,7 +7,7 @@ description: Triggevent is an FFXIV addon with overlays and triggers that overco
 
 # How Triggevent is Different
 
-Now that we've talked about the [issues with existing solutions](/pages/The-Problems-with-Existing-Solutions.md), let's talk more about
+Now that we've talked about the [issues with existing solutions](The-Problems-with-Existing-Solutions.md), let's talk more about
 how Triggevent is different.
 
 ## What is the 'Job' of a Trigger?

@@ -238,4 +238,4 @@ they start with the simple stuff that's not *too* hard to stumble their way thro
 Then, as you slowly build up to the more advanced applications, you'll run into inconveniences, but never such a huge inconvenience that you
 decide 'enough is enough' and split off entirely.
 
-Now, continue reading in [How Triggevent is Different](/pages/How-Triggevent-is-Different.md) to see how it actually addresses these issues.
+Now, continue reading in [How Triggevent is Different](How-Triggevent-is-Different.md) to see how it actually addresses these issues.

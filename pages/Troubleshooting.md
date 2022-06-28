@@ -84,4 +84,4 @@ up on the General tab, and then right-click a player and select "Set as primary 
 
 ## Jail/Automark Issues
 
-See [Titan Jail Troubleshooting](/pages/Titan-Jail.md#Troubleshooting)
+See [Titan Jail Troubleshooting](Titan-Jail.md#Troubleshooting)
