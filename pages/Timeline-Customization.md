@@ -106,3 +106,28 @@ You cannot delete a built-in entry. Instead, just uncheck "Enabled" (the first c
 
 To remove all customizations, you can click "Delete All Customizations" which will revert the entire timeline back to its default state.
 
+# Example: Adding Mitigation to a Timeline
+
+Here's how you could add a trigger to your timeline to call out a mitigation usage:
+
+1. Locate the fight you wish to edit the timeline for in the timeline list. Or, if you are already
+   in the zone, click "Select Current" in the bottom left.
+2. Find the ability you'd like to mitigate and select it in the table. In this example, I'll use Ultimate End in DSR:
+![Timeline Customization Part 1](Timeline-Customization-1.png)
+3. Click "Add New Timeline Entry" at the bottom. You should see a new entry immediately before or after the entry
+you had selected:
+![Timeline Customization Part 2](Timeline-Customization-2.png) 
+4. Click into the cell that says "Name Goes Here" and change the name to something more appropriate (e.g. "Reprisal")
+5. Check the "Trig" checkbox.
+6. In the "Pre" column, specify how early you would like it called out (e.g. 7.5 would mean the callout should 
+happen 7.5 seconds beforehand). 
+7. Right-click the entry, click "Use Ability Icon", search for "Reprisal" in the list, select the correct one (the one with the icon), 
+and click "Select":
+![Timeline Customization Part 3](Timeline-Customization-3.png)
+8. The final result should look something like this:
+![Timeline Customization Part 4](Timeline-Customization-4.png)
+9. The name and icon should display on the timeline overlay, and you should receive a callout in addition:
+![Timeline Customization Part 5](Timeline-Customization-5.png)
+
+Note that you may also simply edit the time, rather than using the "Pre" time if you'd like to change when it visually shows up
+on the timeline. The "Trig" option will still need to be checked.
