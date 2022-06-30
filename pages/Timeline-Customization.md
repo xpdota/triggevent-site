@@ -129,5 +129,6 @@ and click "Select":
 9. The name and icon should display on the timeline overlay, and you should receive a callout in addition:
 ![Timeline Customization Part 5](Timeline-Customization-5.png)
 
-Note that you may also simply edit the time, rather than using the "Pre" time if you'd like to change when it visually shows up
-on the timeline. The "Trig" option will still need to be checked.
+Note that you may also simply edit the time, instead of or in conjunction with the "Pre" time. For example, if you plan to use a mitigation
+2 seconds before a mechanic, but would like to be reminded of that 5 seconds before you would press it, then lower the time by 2, and set
+Pre to 5.
