@@ -221,14 +221,15 @@ combatants/party data, so there's not a good way of testing triggers that rely o
 
 # Hojoring
 
-Hojoring provides a suite of neat tools, like SpeSpe. However, it shifts too much of the burden onto the user, by requiring them to learn
-log lines and regular expressions. Worse yet, the way it deals with log line formats changing is by doubling down and attempting to rewrite 
-new-format lines into the old format, meaning you have to go out of your way to find obsolete documentation.
+Hojoring provides a suite of neat tools, like SpeSpe. While it provides a nice basis for DoT and CD tracking, it still places more burden on
+the user than is strictly necessary. The ideal way to let the user choose what DoTs/CDs to track is to provide a pre-made list, since there are
+only so many of them in the game. If more flexibility is needed, typical cases should require no more than a single ability or status effect
+ID, since everything else can be derived from log lines and/or game data (cooldown, charges, ability-to-buff mapping, duration, etc). 
 
-DoT tracking should require very little setup from the user. Even if you don't want to provide a premade list of DoTs to track, the only thing
-you should be asking the user for is an ability or status effect ID, since everything else can be derived from that. CD tracking is only very
-slightly more in-depth, because of CD-reducing abilities, and CD times that change based on traits. Other than that, there's almost no reason
-for either of those things to require nearly as much input from the user.
+Thus, it suffers from the same probelm of Triggernometry in that it requires the user to learn about log lines and regular expressions. It
+worsens this by throwing its own special regex notation into the mix for filtering to the player's character. In addition, it deals with log line
+format changes by attempting to convert new-format lines to the older format, thus requiring the user to deliberately find outdated versions of
+log line documentation.
 
 
 # Next Steps
