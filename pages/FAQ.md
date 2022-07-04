@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Frequently Asked Questions"
+permalink: /pages/FAQ/
+description: Frequently asked questions for Triggevent.
+---
+
 # Frequently Asked Questions
 
 ## Where is Data Stored?
@@ -53,4 +60,5 @@ There are two main reasons. The first is that like [Remote Cactbot](https://gith
 fully remotely to support your console friends (or for 9th manning). OverlayPlugin is great at enabling this. Dalamud and ACT plugin interface, not so much.
 
 The second is that I'd still end up needing to make a standalone version, due to replays. If my data source is an ACT log file or an FFLogs report,
-it doesn't make sense to be running within the game.
+it doesn't make sense to be running within the game. The ability to develop triggers with confidence that they will actually work when you go into the
+fight is paramount. 
