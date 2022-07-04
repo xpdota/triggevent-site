@@ -194,6 +194,7 @@ Should you require any assistance, you can:
     - [Cooldown Tracker](/pages/Cooldown-Tracker.md)
     - [DoT Tracker](/pages/Dot-Tracker.md)
     - [Timeline Customization](/pages/Timeline-Customization.md)
+    - [General Automarker Info](/pages/Automarkers.md)
 - Specific Duties:
     - [Titan Gaol Guide](/pages/Titan-Jail.md)
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md)
