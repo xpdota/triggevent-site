@@ -55,7 +55,8 @@ Nothing out of the ordinary. You'll likely want to customize the PS marker callo
 
 There is a weak aura that appears while Akh Morn is casting that shows which has higher HP if one of them is too high.
 
-There is also an automarker for the Wroth Flames. To enable it, go to Plugin Settings > DSR Automarks. Configuring the automarks
+There is also an automarker for Wroth Flames (both the stacking flame and spreading flame portions). 
+To enable it, go to Plugin Settings > DSR Automarks. Configuring the automarks
 works the same as UWU - see [Titan Jails](Titan-Jail.md). There are some additional settings specific to Wroth:
 
 ![Dragonsong Wroth Flames Automarker Configuration](DSR-am-config.png)

@@ -49,6 +49,59 @@ Note that the overlay does some magic so that "buff active" doesn't necessarily 
 the correct duration. This allows it to work for things like Living Shadow that don't place a buff. It also lets it
 act as a Bard song tracker.
 
+## Adding Custom Cooldowns
+
+You now have the ability to add your own cooldowns in Plugin Settings > Custom Cooldowns. Any cooldowns added here
+will appear in the UI for the personal and party cooldown tracker. This provides extensibility and flexibility similar
+to Hojoring Special Spell Timers (SpeSpe) without the setup hassle.
+
+First, you need to choose the ability to use as the cooldown. There are two ways to do this. For our example, let's use
+Divine Benison.
+
+The first way is to click the "New Cooldown" button. This will present you with a list of all known abilities, along
+with a search box at the top. You can search by name (e.g. "Divine Benison") or by ID ("7432" or "0x1D08"). However, there
+is alsoi a "Use Ability In-Game" button at the top. If you click this button, and then use the ability in-game, it will
+be selected for you:
+
+![Cooldown Ability Picker](CD-Ability-Picker.png)
+
+Click "Select" to finish.
+
+Alternatively, if you have already used the ability, locate it on the Events tab, right click it, and select "Add as Custom Cooldown":
+
+![Custom CD from Events Tab](CD-from-events.png)
+
+For most cooldowns, this is all you need to do. Cooldown, charges, duration, and buffs all come from game data and/or log lines, so
+you don't need to manually enter anything else in the majority of situations. However, in this case, we need to tell Triggevent that
+Divine Benison actually has two charges (since the second charge comes from a trait, and TE only knows about the base versions):
+
+![Divine Benison needs to have two charges](DB-two-charges.png)
+
+You can then configure it like any other cooldown, and have it display in overlays and/or perform TTS:
+
+![Divine Benison displayed on the overlay](Divine-Benison-on-screen.png)
+
+If a custom cooldown and a built-in cooldown have the same ability IDs, the custom cooldown definition
+takes priority.
+
+### Advanced
+
+What about the rest of the fields?
+
+* Name: Simply overrides the display name. The name is guessed based on the chosen abilities.
+* Cooldown: The cooldown. Only needs to be overridden if a trait changes the cooldown.
+* Charges: The number of charges. Only needs to be overridden if extra charges are granted by a trait.
+  * Unfortunately, charge display is mutually exclusive with displaying the buff active time.
+* Duration: Override the duration. 
+  * For skills that place a buff, but the buff has the wrong duration (e.g. Bard songs), overriding the duration is all you need
+    to do here.
+  * For skills that do not place a buff (e.g. DRK's Living Shadow), you should also uncheck "Automatic" under status effects, and
+    make sure the status effect list is empty.
+* Secondary Abilities: Other abilities which share the same cooldown.
+* Status Effects: Status effects that are placed by this ability. "Automatic" causes it to be derived from log lines.
+  * If you want to disable active time display entirely for this cooldown, make the list empty, and uncheck "Automatic".
+    You will need to do this to have an active duration display on abilities that do not place a buff (e.g. Living Shadow).
+
 ## For Devs
 
 Cooldowns are defined in `xivdata/src/main/java/gg/xp/xivdata/data/Cooldown.java`
@@ -103,7 +156,7 @@ WanderersMinuet(builder(CooldownType.PARTY_BUFF, true, 0xde7).buffIds(0x8a8).dur
 
 // Even if there is no buff at all, we can fake it using a duration (Living Shadow only
 // shows duration on the job gauge, not a real buff).
-LivingShadow(builder(CooldownType.PERSONAL_BURST, true, 0x4058).duration(24)),
+LivingShadow(builder(CooldownType.PERSONAL_BURST, true, 0x4058).noAutoBuffs().duration(24)),
 
 
 
