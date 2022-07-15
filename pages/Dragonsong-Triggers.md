@@ -74,3 +74,7 @@ The rest of this screen controls the priority system. The list of jobs controls 
 the "Rot takes highest priority" makes the player who currently has rot the highest priority. You should arrange the list so that the
 person *receiving* rot next is at the top. The "reverse sort" option causes higher priority to receive a higher number, while
 unchecking this option causes the higher priority players to receive a lower number.
+
+While there is not a specific test macro like the titan gaol automarkers, you can still use the 'amtest' command (e.g. `/e c:amtest 1` will
+mark yourself if macros or Telesto are working). However, you can test it by importing a log file using the 
+[same instructions as Titan Gaols](Titan-Jail.md#testing-with-a-log-file).
