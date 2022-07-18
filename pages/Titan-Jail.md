@@ -75,7 +75,7 @@ Head on over to the "AutoMark" tab, and choose your settings accordingly:
 Telesto is the easiest option. Just install it, then check 'Use Telesto...'. You can also read more on the
 [Telesto Support](Telesto-Support.md) page about how to set up and test Telesto.
 
-To use macros for the gaols instead, choose whether you want to use F1-F9 or Numpad1-9, 
+To use macros for the titan gaol auto markers instead, choose whether you want to use F1-F9 or Numpad1-9, 
 and check/uncheck the 'Use F1-F9' checkbox
 accordingly. Then, in-game, make a hotbar bound to those keys, with the following macros:
 
@@ -118,11 +118,11 @@ Numpad9 / F9:
 
 ## Testing It
 
-To test that your jail macros are set up and keybound correctly, you can use the in-game command `/e c:amtest 1` which will mark yourself. 
+To test that your uwu jail macros are set up and keybound correctly, you can use the in-game command `/e c:amtest 1` which will mark yourself. 
 `/e c:amtest 1 3 5`, for example, would mark the first, third, and fifth members of the party. You do not need to be in the instance for
 this. If you only mark yourself (i.e. `/e c:amtest 1`), you don't need to be in a party either.
 
-To test gaols specifically, if you are in the instance, you can do something like `/e c:jailtest 3 2 8` which will
+To test titan gaols specifically, if you are in the instance, you can do something like `/e c:jailtest 3 2 8` which will
 simulate jails on the third, second, and eighth player in the party. You can do this out of the instance as well
 (though you must not be in a normal party, not cross-world), and you must enable the "Override Zone Lock" setting on
 the Titan Gaols tab (it is normally only enabled in the Weapon's Refrain instance).
