@@ -2,12 +2,13 @@
 layout: default
 title: "Dragonsong's Reprise Triggers"
 permalink: /pages/Dragonsong-Triggers/
-description: Triggevent is an FFXIV plugin with comprehensive Dragonsong's Reprise (Dragonsong War Ultimate) triggers, including optional Wroth Flames automarks.
+description: Triggevent is an FFXIV plugin with Dragonsong Ultimate (DSR) triggers, including optional Wroth Flames automarks.
 ---
 
 # Dragonsong War
 
-Triggevent has a complete set of triggers for Dragonsong War (Ultimate).
+Triggevent has a complete set of triggers for Dragonsong War (Ultimate), also known as DSR or Dragonsong's Reprise.
+This collection includes triggers for all phases, as well as Wroth Flames automarks and a Haurchfaunt HP tracker.
 
 You can find these in Plugin Settings > Callouts:
 
