@@ -189,6 +189,7 @@ Should you require any assistance, you can:
 - [Telesto Support](/pages/Telesto-Support.md)
 - [More documentation on the Wiki](https://github.com/xpdota/event-trigger/wiki)
 - [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
+- [Linux Install Guide](/pages/Linux-support.md)
 - [How to Help Out](/pages/How-to-Help.md)
 - Overlays and Features:
     - [Cooldown Tracker](/pages/Cooldown-Tracker.md)
