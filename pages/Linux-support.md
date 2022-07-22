@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Linux Install Instructions"
-permalink: /pages/Titan-Jail/
+permalink: /pages/Linux-support/
 description: Triggevent is an FFXIV addon with native Linux support (no WINE, hudkit, etc required).
 ---
 
