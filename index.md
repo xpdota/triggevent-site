@@ -186,16 +186,16 @@ Should you require any assistance, you can:
 - [Troubleshooting Guide](/pages/Troubleshooting.md)
 - [The Problems with Existing Solutions (or: Why I was spurred to make this)](/pages/The-Problems-with-Existing-Solutions.md)
 - [How Triggevent is Different](/pages/How-Triggevent-is-Different.md)
-- [Telesto Support](/pages/Telesto-Support.md)
+- [Telesto Support](/pages/Telesto-Support.md) - Telesto enables easier and better auto markers, and a properly sorted party list.
 - [More documentation on the Wiki](https://github.com/xpdota/event-trigger/wiki)
 - [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
-- [Linux Install Guide](/pages/Linux-support.md)
+- [Linux Install Guide](/pages/Linux-support.md) - Run natively on Linux, no WINE required.
 - [How to Help Out](/pages/How-to-Help.md)
 - Overlays and Features:
-    - [Cooldown Tracker](/pages/Cooldown-Tracker.md)
-    - [DoT Tracker](/pages/Dot-Tracker.md)
-    - [Timeline Customization](/pages/Timeline-Customization.md)
-    - [General Automarker Info](/pages/Automarkers.md)
+    - [Cooldown Tracker](/pages/Cooldown-Tracker.md) - Personal + Party Cooldown tracker.
+    - [DoT Tracker](/pages/Dot-Tracker.md) - Multi-target DoT tracker + DoT tick tracker.
+    - [Timeline Customization](/pages/Timeline-Customization.md) - Triggevent's extensions of Cactbot Timelines.
+    - [General Automarker Info](/pages/Automarkers.md) - General info for automarks (Wroth Flames and UWU auto markers have their own pages below).
 - Specific Duties:
-    - [Titan Gaol Guide](/pages/Titan-Jail.md)
-    - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md)
+    - [Titan Gaol Guide](/pages/Titan-Jail.md) - Setup guide for UWU auto markers and jail plugin callouts.
+    - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.

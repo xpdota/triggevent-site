@@ -7,9 +7,9 @@ description: Triggevent is an FFXIV addon with support for automarks/automarkers
 
 # Automarkers
 
-If you're looking for UWU Titan Jail auto markers specifically, visit the [Titan Jail](Titan-Jail.md) page.
+If you're looking for FFXIV UWU Titan Jail auto markers specifically, visit the [Titan Jail](Titan-Jail.md) page.
 
-For DSR Wroth Flames auto marks, visit the [Dragonsong's Reprise](Dragonsong-Triggers.md) page.
+For FFXIV DSR Wroth Flames auto marks, visit the [Dragonsong's Reprise](Dragonsong-Triggers.md) page.
 
 This page covers general setup and development of new automarks.
 
@@ -17,7 +17,7 @@ This page covers general setup and development of new automarks.
 
 Automarkers in Triggevent can use classic-style macros, or [Telesto](Telesto-Support.md). Telesto-based
 automarks can use any available marker (attack, bind, ignore, shapes). Macro-based markers will only
-work for applying sequential 'attack' markers (e.g. attack1, attack2, and attack3 for Titan Gaols).
+work for applying sequential 'attack' markers (e.g. attack1, attack2, and attack3 for UWU Titan Gaols).
 
 Generally, Telesto is the preferred method, but I will go over both options.
 
