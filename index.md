@@ -6,8 +6,7 @@ After using other tools for triggers and overlays for years, I realized that it 
 over the status quo. All this time and we're still making triggers with log lines and regular expressions? Let's
 step back a bit and completely rethink things.
 
-
-[Download Here](https://github.com/xpdota/event-trigger/releases) 
+[Download Here](https://github.com/xpdota/event-trigger/releases)
 
 (You want the larger file, unless you know you have Java 17+ already installed)
 
@@ -60,7 +59,7 @@ There is more information about the Gaol plugin [here](pages/Titan-Jail.md).
 ### Triggers
 
 Triggers can be written in the codebase (like Cactbot), giving you all the benefits of a fully featured IDE and
-debugger. Or, for simple triggers, they can be made in the UI. 
+debugger. Or, for simple triggers, they can be made in the UI.
 
 Whichever option you take, you don't need to know about log lines nor regular expressions.
 
@@ -76,7 +75,7 @@ What does the "ModifiableCallout" bit do? It lets the user easily modify the cal
 
 ![image](https://user-images.githubusercontent.com/14287379/158667132-b2d816a9-34c7-414a-9079-93dab4703760.png)
 
-For simple calls, you can also make triggers using easily readable conditions - no regular expressions required! 
+For simple calls, you can also make triggers using easily readable conditions - no regular expressions required!
 Plus, since everything is parsed for you, you don't need to worry about log line changes or patches breaking
 your trigger.
 
@@ -125,16 +124,15 @@ The map panel shows you a view of all combatants and what they're casting.
 ### Replay Support
 
 Triggevent can load data from various sources. In addition to live data from OverlayPlugin WebSocket (plus other live
-sources like Telesto), it can also load from an ACT log or FFLogs (with reduced functionality). 
+sources like Telesto), it can also load from an ACT log or FFLogs (with reduced functionality).
 Also, if you run it live, you have the option to
 record all the data into its own save format. This save format captures all the WS data, so it provides more accurate
 combatants data.
 
-To open a replay, simply run triggevent-import.exe (instead of the normal triggevent.exe), 
+To open a replay, simply run triggevent-import.exe (instead of the normal triggevent.exe),
 and then choose a file or FFLogs URL. Note that in order to use FFLogs reports, you'll need to have your own API key.
 
 ![image](https://user-images.githubusercontent.com/14287379/158670751-3252a0d1-854b-47a7-8a47-2a74a2cf30bd.png)
-
 
 ## Future Development
 
@@ -176,6 +174,7 @@ I put most of my upcoming/desired features on the [project board](https://github
 # I Need Help!
 
 Should you require any assistance, you can:
+
 - [File a bug](https://github.com/xpdota/event-trigger/issues)
 - Ask on Discord (DM xp#0001 or ping in FFXIV ACT discord - make sure we have a mutual server since I get a lot of spam friend requests)
 
@@ -188,7 +187,6 @@ Should you require any assistance, you can:
 - [How Triggevent is Different](/pages/How-Triggevent-is-Different.md)
 - [Telesto Support](/pages/Telesto-Support.md) - Telesto enables easier and better auto markers, and a properly sorted party list.
 - [More documentation on the Wiki](https://github.com/xpdota/event-trigger/wiki)
-- [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
 - [Linux Install Guide](/pages/Linux-support.md) - Run natively on Linux, no WINE required.
 - [How to Help Out](/pages/How-to-Help.md)
 - Overlays and Features:
@@ -199,3 +197,6 @@ Should you require any assistance, you can:
 - Specific Duties:
     - [Titan Gaol Guide](/pages/Titan-Jail.md) - Setup guide for UWU auto markers and jail plugin callouts.
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.
+- For Devs:
+    - [How to make a new module](/pages/Custom-Module.md) - how to stand up a new module from scratch
+    - [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
