@@ -20,7 +20,7 @@ URL with the branch you are using).
 
 READ THIS: See [Installation](https://github.com/xpdota/event-trigger/wiki/Installation-and-Setup)
 
-Short version: Install Overlayplugin in your ACT, then start OverlayPlugin WSServer from within ACT.
+Short version: Install OverlayPlugin in your ACT, then start OverlayPlugin WSServer from within ACT.
 
 There is more documentation on the [Wiki](https://github.com/xpdota/event-trigger/wiki/).
 
