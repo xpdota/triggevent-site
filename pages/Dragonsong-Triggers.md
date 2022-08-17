@@ -79,3 +79,25 @@ unchecking this option causes the higher priority players to receive a lower num
 While there is not a specific test macro like the titan gaol automarkers, you can still use the 'amtest' command (e.g. `/e c:amtest 1` will
 mark yourself if macros or Telesto are working). However, you can test it by importing a log file using the 
 [same instructions as Titan Gaols](Titan-Jail.md#testing-with-a-log-file).
+
+## P7: Dragon-King Thordan
+
+Most triggers are self-explanatory.
+
+### Uptime Exaflares (Unreleased)
+
+This feature is not released - you will need the 'beta' branch if you wish to use it.
+
+You will need to enable the callouts here - they are disabled by default:
+
+![Uptime Exas](Uptime-exas.png)
+
+While you're at it, you'll probably want to disable the normal exaflare callout.
+
+This strat gives you four or five possible movements:
+
+1. South Plant: Dodge into the south exaflare, then plant (both the NW and NE exaflares will miss you). 
+2. South then North: Dodge into the south exaflare, then move towards the north of the hitbox (both the NW and NE exaflares will hit south).
+3. South then West: Dodge into the south exaflare, then stand at the SW side of the hitbox (to dodge NW exaflare).
+4. South then East: Dodge into the south exaflare, then stand at the SE side of the hitbox (to dodge NE exaflare).
+5. Downtime: Dodge into south, then dodge outwards. Unconfirmed if this pattern can actually happen.
