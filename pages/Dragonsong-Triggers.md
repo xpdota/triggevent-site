@@ -101,3 +101,5 @@ This strat gives you four or five possible movements:
 3. South then West: Dodge into the south exaflare, then stand at the SW side of the hitbox (to dodge NW exaflare).
 4. South then East: Dodge into the south exaflare, then stand at the SE side of the hitbox (to dodge NE exaflare).
 5. Downtime: Dodge into south, then dodge outwards. Unconfirmed if this pattern can actually happen.
+
+[This video](https://www.youtube.com/watch?v=CglVBeTfEec) shows the 'plant' and 'side' patterns, but does not show the "South then North" spot.
