@@ -103,3 +103,5 @@ This strat gives you four or five possible movements:
 5. Downtime: Dodge into south, then dodge outwards. Unconfirmed if this pattern can actually happen.
 
 [This video](https://www.youtube.com/watch?v=CglVBeTfEec) shows the 'plant' and 'side' patterns, but does not show the "South then North" spot.
+
+You will likely want to disable the "P7: Exaflare Windup" callout so that it doesn't talk over the uptime callout.
