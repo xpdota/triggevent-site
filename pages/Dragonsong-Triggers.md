@@ -84,9 +84,7 @@ mark yourself if macros or Telesto are working). However, you can test it by imp
 
 Most triggers are self-explanatory.
 
-### Uptime Exaflares (Unreleased)
-
-This feature is not released - you will need the 'beta' branch if you wish to use it.
+### Uptime Exaflares
 
 You will need to enable the callouts here - they are disabled by default:
 
