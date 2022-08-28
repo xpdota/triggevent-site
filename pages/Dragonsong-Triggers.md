@@ -98,8 +98,16 @@ This strat gives you four or five possible movements:
 2. South then North: Dodge into the south exaflare, then move towards the north of the hitbox (both the NW and NE exaflares will hit south).
 3. South then West: Dodge into the south exaflare, then stand at the SW side of the hitbox (to dodge NW exaflare).
 4. South then East: Dodge into the south exaflare, then stand at the SE side of the hitbox (to dodge NE exaflare).
-5. Downtime: Dodge into south, then dodge outwards. Unconfirmed if this pattern can actually happen.
+5. Northwest Plant: Dodge into the northwest exaflare, then plant (both the S and NE exaflares will miss you).
+6. Northeast Plant: Dodge into the northeast exaflare, then plant (both the S and NW exaflares will miss you).
+7. Downtime: Dodge into south, then dodge outwards. This *shouldn't* happen, but is included as a contingency.
 
-[This video](https://www.youtube.com/watch?v=CglVBeTfEec) shows the 'plant' and 'side' patterns, but does not show the "South then North" spot.
+[This video](https://www.youtube.com/watch?v=CglVBeTfEec) shows the 'plant' and 'side' patterns.
+[This clip](https://clips.twitch.tv/RelievedAuspiciousMuleStinkyCheese-6SMF0zjUBuVK43cz) shows the 'south then north' pattern of exaflares,
+though does the normal dodge rather than uptime.
+
+Later, a setting will be added to let you customize the priority, as some of these are not mutually exclusive.
+The patterns are not random - it seems that there is always at least one plantable exaflare, so you may wish to
+prioritize NW/NE plant over S non-plant.
 
 You will likely want to disable the "P7: Exaflare Windup" callout so that it doesn't talk over the uptime callout.
