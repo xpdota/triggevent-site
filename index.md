@@ -10,6 +10,11 @@ step back a bit and completely rethink things.
 
 (You want the larger file, unless you know you have Java 17+ already installed)
 
+## Current Trigger Status
+
+- [Abyssos](/pages/triggers/Abyssos-Triggers.md): Done
+- [Dragonsong's Reprise](/pages/Dragonsong-Triggers.md): Done
+
 ### Dragonsong's Reprise (aka Dragonsong War/Dragonsong Ultimate) Trigger Status: Done!
 
 Code documentation (auto-generated) is now
