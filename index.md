@@ -205,5 +205,7 @@ Should you require any assistance, you can:
 - For Devs:
     - [How to make a new module](/pages/Custom-Module.md) - How to stand up a new module from scratch
     - [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
+- General Log Documentation:
+    - [Finding Percentages of Vulns/Buffs/Etc](/pages/tutorials/Damage-Down-Up.md) - How to find damage up/damage down/vuln/etc percentages in a log.
 
 
