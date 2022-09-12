@@ -202,6 +202,7 @@ Should you require any assistance, you can:
 - Specific Duties:
     - [Titan Gaol Guide](/pages/Titan-Jail.md) - Setup guide for UWU auto markers and jail plugin callouts.
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.
+    - [Abyssos Triggers](/pages/triggers/Abyssos-Triggers.md)
 - For Devs:
     - [How to make a new module](/pages/Custom-Module.md) - How to stand up a new module from scratch
     - [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
