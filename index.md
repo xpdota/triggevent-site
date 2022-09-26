@@ -84,7 +84,7 @@ For simple calls, you can also make triggers using easily readable conditions - 
 Plus, since everything is parsed for you, you don't need to worry about log line changes or patches breaking
 your trigger.
 
-![Easy Trigger Conditions](Easy-Trigger-Conditions.png)
+![Easy Triggers New](Easy-trigger-new.png)
 
 In some cases, you can right click an event, click "Make Easy Trigger", and it will make one for you:
 
