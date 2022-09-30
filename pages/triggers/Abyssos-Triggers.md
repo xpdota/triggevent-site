@@ -50,7 +50,6 @@ Most mechanics are done.
 
 A couple are still needed, namely:
 - Exaflare direction
-- A few tethers
 
 Completed:
 - Bough of Attis Close/Far/Left/Right
@@ -100,7 +99,7 @@ Done, including Fourfold safe spots for follow-up hits.
 
 ## P8S Part 2
 
-Done. There are a very large number of callout options for HC2 to accomodate as many strats
+Done. There are a very large number of callout options for HC2 to accommodate as many strats
 as possible.
 
 - Tyrant's Unholy Darkness (Buster)
@@ -117,8 +116,9 @@ as possible.
   - Initial cast
   - Initial debuff
   - Possibly doing alchemy, or definitely not doing first alchemy
-    - Tower color is not in the log, so instead it calls out which tower colors indicate you
-      will be doing alchemy (e.g. "Alch if Green or Blue Tower")
+    - Tower color relies on MapEffect. Should you happen to be running a dev build of
+      OverlayPlugin which has MapEffect lines enabled, it will instead just call out whether
+      or not to do alchemy/towers.
   - Cleave safe side
   - Followup call for each debuff combination
     - Also has separate calls for if you were the unused short letter, since some strats use them as a marker
