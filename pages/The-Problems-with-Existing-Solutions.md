@@ -227,9 +227,11 @@ only so many of them in the game. If more flexibility is needed, typical cases s
 ID, since everything else can be derived from log lines and/or game data (cooldown, charges, ability-to-buff mapping, duration, etc). 
 
 Thus, it suffers from the same probelm of Triggernometry in that it requires the user to learn about log lines and regular expressions. It
-worsens this by throwing its own special regex notation into the mix for filtering to the player's character. In addition, it deals with log line
-format changes by attempting to convert new-format lines to the older format, thus requiring the user to deliberately find outdated versions of
-log line documentation.
+worsens this by throwing its own special regex notation into the mix for filtering to the player's character (or other conditions). 
+In addition, it deals with log line format changes by attempting to convert new-format lines to the older format, thus requiring the user to 
+deliberately find outdated versions of log line documentation. Specifically for SpeSpe, there aren't really *that* many things you can make
+a bar out of - it's either a buff, an ability, or both, and we can often pull the needed data out of log lines and/or game files anyway.
+You, as the user, are tasked with doing lots of work that really shouldn't be your job.
 
 
 # Next Steps

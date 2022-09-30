@@ -169,7 +169,7 @@ I put most of my upcoming/desired features on the [project board](https://github
     - Events can be further abstracted into more refined events - for example, Titan Jails have their own event, so
       anyone wanting to provide more forms of Jail plugins need only listen for that specific event.
     - The trigger shouldn't need to worry about any low-level details - it should be abstracted to that absolute
-      minimum (e.g. `call out "Raidwide" when ability 0x123 starts casting`
+      minimum (e.g. `call out "Raidwide" when ability 0x123 starts casting`)
 * Plugins can have their own custom configuration GUIs (see the jail config GUI for a great example)
 * Run scripts within the app, for any purpose:
     - Prototyping code that will go inside the app

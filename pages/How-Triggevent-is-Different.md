@@ -86,12 +86,14 @@ else{
 ```
 [//]: # (@formatter:on)
 
-This example is for Wrath of the Heavens, when the dynamo happens. If you have lightning, it will call "in with lightning", and if you don't, it just calls "in".
+This example is for Wrath of the Heavens, when the dynamo starts casting. If you have lightning, it will call "in with lightning", and if you don't, it just calls "in".
+
+Normally, you'd need a separate trigger to collect these buffs, but Triggevent makes this approach unnecessary.
 
 ## Sequential Triggers
 
 Many mechanics consist of complex sequences of events. These can be a mess to make triggers for, because there's no way to read them that
-provides a nice overview of the actual flow and logic. Here's the full Wrath of the Heavens example:
+provides a nice overview of the actual flow of the mechanic and logic of the trigger. Here's the full Wrath of the Heavens example:
 
 [//]: # (@formatter:off)
 ```java
@@ -152,6 +154,9 @@ That's it. That's the entirety of Wrath of the Heavens, minus twisters and liqui
 
 After hitting the start point (in this case, the literal 'Wrath of the Heavens' cast), the trigger executes its code.
 When it hits a 's.waitEvent' call, think of it like `await` - it will 'pause' the code until it sees that event.
+
+In addition, because the sequential trigger need not change any external state, you don't have to worry about cleanup behavior. Everything is
+just a local variable that ceases to exist once the sequential trigger has finished executing.
 
 ### Updating Existing Calls
 
@@ -214,6 +219,50 @@ However, sequential triggers have an even more slick way of handling this, as we
 
 Here, we initially set it to the "Puddle on you" call - but once the debuff expires, we change the call to "Move". The on-screen text updates in place,
 but we get a new TTS.
+
+### Templates
+
+Sequential Trigger Templates can be created and used to cover common scenarios. For example, if you have a mechanic where you want one call to happen at
+the beginning of a cast, then another call at the end (e.g. a "bait then move" mechanic), there is a template for that:
+
+```java
+	@AutoFeed
+	private final SequentialTrigger<BaseEvent> darkDomeSq = SqtTemplates.beginningAndEndingOfCast(
+			acs -> acs.abilityIdMatches(30859),
+			darkDomeBait, darkDomeMove2
+	);
+```
+
+This calls out the "bait" then "move" mechanic (Dark Dome) in P6S.
+
+What about mechanics where the same ability is used multiple times in one fight, necessitating different calls each time? 
+
+```java
+	@AutoFeed
+	private final SequentialTrigger<BaseEvent> highConcept1 = SqtTemplates.multiInvocation(60_000,
+			AbilityCastStart.class, acs -> acs.abilityIdMatches(31148),
+			this::hc1,
+			this::hc2);
+```
+
+Here, we can split High Concept 1 and High Concept 2 into separate methods. The first time in a given pull we see ability 
+31148 being cast, it will call the `hc1` method. The second time, `hc2`. You can specify as many of these as needed.
+
+Similarly, what about mechanics where the actual castbar or buff duration is very long, and we want to call out when
+the duration falls below a certain point?
+
+Here is Shockwave, the knockback in P2S:
+
+```java
+	@AutoFeed
+	private final SequentialTrigger<BaseEvent> shockwaveSq = SqtTemplates.callWhenDurationIs(
+			AbilityCastStart.class, acs -> acs.abilityIdMatches(0x682F),
+			shockwave,
+			Duration.ofSeconds(6));
+```
+
+Since knockback immunity lasts 6 seconds, we want to wait until there are 6 seconds remaining on the cast before telling the user to
+use knockback immunity.
 
 ## Log Analysis
 
