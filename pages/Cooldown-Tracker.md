@@ -102,6 +102,15 @@ What about the rest of the fields?
   * If you want to disable active time display entirely for this cooldown, make the list empty, and uncheck "Automatic".
     You will need to do this to have an active duration display on abilities that do not place a buff (e.g. Living Shadow).
 
+### Specific Notes for Potions/Items
+
+Items cannot be added from the custom cooldown list. However, you can add them using the events tab. The ability name will
+be "item_xyz" where xyz is a unique ID for that item. 
+
+Since these currently are not pulled from the game files, you will need to manually enter a name and a cooldown.
+
+Note that every potion has a different ID, even different grades of the same type of tincture.
+
 ## For Devs
 
 Cooldowns are defined in `xivdata/src/main/java/gg/xp/xivdata/data/Cooldown.java`
@@ -165,4 +174,3 @@ LivingShadow(builder(CooldownType.PERSONAL_BURST, true, 0x4058).noAutoBuffs().du
 ```
 [//]: # (@formatter:on)
 
-Note that 
