@@ -57,6 +57,18 @@ its own customization UI:
 
 ![Gaol Plugin UI](titan-gaol.png)
 
+## Simple Concise Triggers
+
+Triggers with very simple conditions can be defined in as few as two lines:
+
+```java
+@NpcCastCallout({0x796C, 0x7984})
+private final ModifiableCallout<AbilityCastStart> hellsNebula = ModifiableCallout.durationBasedCall("Hells' Nebula", "1 HP");
+```
+
+This will trigger when an NPC starts casting 0x796C or 0x7984, while still providing the user with the ability to customize
+the callout.
+
 ## Game Data Files
 
 In fact, let's look at the example of cooldown tracking. Let's say we want a simple CD tracker that also shows the buff's active duration. You'd
