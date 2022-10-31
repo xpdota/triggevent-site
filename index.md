@@ -14,6 +14,7 @@ step back a bit and completely rethink things.
 
 - [Abyssos](/pages/triggers/Abyssos-Triggers.md): Done
 - [Dragonsong's Reprise](/pages/Dragonsong-Triggers.md): Done
+- [Another Sil'Dihn Subterrane](/pages/triggers/Sildihn-Triggers.md) Criterion/Savage: Done
 
 ### Dragonsong's Reprise (aka Dragonsong War/Dragonsong Ultimate) Trigger Status: Done!
 
