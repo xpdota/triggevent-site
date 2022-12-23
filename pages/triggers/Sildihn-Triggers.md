@@ -13,3 +13,5 @@ Unfortunately, it does not appear to be possible to read any of the following me
 
 1. Which 2x cleave baits are firing in what order
 2. Anything related to non-player portals
+
+However, other mechanics are fine. 

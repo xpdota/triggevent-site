@@ -2,7 +2,7 @@
 layout: default
 title: "Timeline Customizations"
 permalink: /pages/Timeline-Customizations/
-description: Triggevent is an FFXIV addon that supports Cactbot Timelines and includes a convenient editor. Want your entire mit plan on the timeline? No Problem!
+description: Triggevent is an FFXIV addon that supports Cactbot Timelines and includes a convenient editor. Want timeline triggers for your entire mit plan? No Problem!
 ---
 
 # Timeline Customization

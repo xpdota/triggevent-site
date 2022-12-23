@@ -76,6 +76,23 @@ Once you have either Telesto or macros set up, you'll want to make sure you have
 specific automark triggers you wish to use. For UWU Titan Gaol automarks, see the [Titan Jail](Titan-Jail.md) page.
 For DSR Wroth Flames, visit the [Dragonsong's Reprise](Dragonsong-Triggers.md) page.
 
+# Making your own Automarks using Easy Triggers
+
+There is now a "Mark Target" action available for use in Easy Triggers:
+
+You must use an event type (such as a buff or ability use) that has a target. The action will throw the specified
+marker onto said target:
+
+![Easy Triggers Automarks](easy-triggers-am.png)
+
+"Next Available Attack" means to just use `/mk attack <target>` - it will sequentially mark people.
+
+For example, if you wanted to mark people with the Thunderstruck debuff (i.e. re-create the UCoB Nael Lightning AM):
+
+![Nael Thunder Automark Part 1](nael-am-1.png)
+
+![Nael Thunder Automark Part 2](nael-am-2.png)
+
 # Dev Info
 
 If you wish to create your own automarker triggers, both the Titan Jail and Wroth Flames automarks are great

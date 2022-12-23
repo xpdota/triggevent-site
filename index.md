@@ -195,6 +195,7 @@ Should you require any assistance, you can:
 - [More documentation on the Wiki](https://github.com/xpdota/event-trigger/wiki)
 - [Linux Install Guide](/pages/Linux-support.md) - Run natively on Linux, no WINE required.
 - [How to Help Out](/pages/How-to-Help.md)
+    - [Donations on Ko-Fi](https://ko-fi.com/wynnxiv) - Please note that this project depends on the work of other projects (OverlayPlugin, Cactbot, and more), so please consider also supporting those.
 - Overlays and Features:
     - [Cooldown Tracker](/pages/Cooldown-Tracker.md) - Personal + Party Cooldown tracker.
     - [DoT Tracker](/pages/Dot-Tracker.md) - Multi-target DoT tracker + DoT tick tracker.
@@ -204,6 +205,7 @@ Should you require any assistance, you can:
     - [Titan Gaol Guide](/pages/Titan-Jail.md) - Setup guide for UWU auto markers and jail plugin callouts.
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.
     - [Abyssos Triggers](/pages/triggers/Abyssos-Triggers.md)
+    - [Another Sil'Dihn Subterrane](/pages/triggers/Sildihn-Triggers.md) Criterion/Savage.
 - For Devs:
     - [How to make a new module](/pages/Custom-Module.md) - How to stand up a new module from scratch
     - [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
