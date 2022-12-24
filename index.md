@@ -211,5 +211,6 @@ Should you require any assistance, you can:
     - [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
 - General Log Documentation:
     - [Finding Percentages of Vulns/Buffs/Etc](/pages/tutorials/Damage-Down-Up.md) - How to find damage up/damage down/vuln/etc percentages in a log.
-
+- Guides:
+    - [Migration Guide](/pages/Migrating-From-Triggernometry.md)
 
