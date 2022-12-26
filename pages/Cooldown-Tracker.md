@@ -2,7 +2,7 @@
 layout: default
 title: "Cooldown Tracker"
 permalink: /pages/Cooldown-Tracker/
-description: Triggevent provides a cooldown tracker (overlay and/or callouts) for both party and personal CDs.
+description: Triggevent provides a cooldown tracker/timer (overlay and/or callouts) for both party and personal CDs.
 ---
 
 # Personal and Party CD Trackers
@@ -28,7 +28,7 @@ As above, check the boxes for the cooldowns you'd like to receive calls for. You
 the "Enable TTS" checkbox at the top. The "Time before expiry" field controls how soon you'd like the calls
 (e.g. '5000' will result in the cooldown being called out when it is 5 seconds away from being ready).
 
-### Overlay
+### Overlay (Cooldown Timers)
 
 "Enable Overlay" enables/disables the overlay. You should also check out the "Overlays" tab to change the locations,
 size, and transparency of your overlays.
@@ -113,7 +113,7 @@ Note that every potion has a different ID, even different grades of the same typ
 
 ## For Devs
 
-Cooldowns are defined in `xivdata/src/main/java/gg/xp/xivdata/data/Cooldown.java`
+Built-in cooldowns are defined in `xivdata/src/main/java/gg/xp/xivdata/data/Cooldown.java`
 
 Going forward, it is recommended to use the builder. It will attempt to fill in information automatically from game data files and log lines.
 You as the developer only need to fill in the parts that would be wrong according to those sources. For example, if a trait lowers the
@@ -127,7 +127,7 @@ Here are some examples with explanations:
 ```java
 // Simple cooldown, using the non-builder style. 
 // Everything is automatic. You just specify the buff ID, the type, and whether or not 
-// you want it to be in the personal CD overlay or not.
+// you want it to be in the personal CD overlay.
 Holmgang(true,  CooldownType.INVULN, 0x2b),
         
 // Simple cooldown, builder style
