@@ -187,6 +187,7 @@ Should you require any assistance, you can:
 # Site Map
 
 - [Main Page](/)
+- [Quick Start Guide](/pages/tutorials/Quick-Start-Guide.md)
 - [Frequently Asked Questions](/pages/FAQ.md)
 - [Troubleshooting Guide](/pages/Troubleshooting.md)
 - [The Problems with Existing Solutions (or: Why I was spurred to make this)](/pages/The-Problems-with-Existing-Solutions.md)
