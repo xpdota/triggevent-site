@@ -27,7 +27,7 @@ In this case, we have 0, 0, and -38. The zeroes can be ignored, and -38 means th
 If you know the ability ID rather than the name, search for the hex ID by entering it in '0x1234' format
 in the same field.
 
-If you have no idea what ability applied the DD, first search for 'Event Class: BuffApplied' and 
+If you have no idea what ability applied the DD, first search for 'Event Class: BuffApplied' and
 'Ability/Buff: Damage Down'. This will give you the ID. In this case, it is 0xB5F:
 
 ![Finding DD ID](dd-id-example.png)
@@ -78,23 +78,24 @@ You can do this with a raw log file, but it is more difficult.
 
 You'll need to find the 21/22-line corresponding to the ability. In this case, Addle:
 
-`21|2022-09-05T00:00:02.3140000+08:00|10327D18|Name Removed|1D88|Addle|40014BD9|Hephaistos|F6FB0E|
-4B30000|0|0|0|0|0|0|0|0|0|0|0|0|0|0|26209597|33218076|10000|10000|||100.00|77.00|0.00|0.00|63681|
-63681|0|10000|||102.59|98.95|0.00|-3.02|0000A230|0|1|a5bf435d0da63215`
+`21|2022-09-05T00:00:02.3140000+08:00|10327D18|Name Removed|1D88|Addle|40014BD9|Hephaistos|F6FB0E|4B30000|0|0|0|0|0|0|0|0|0|0|0|0|0|0|26209597|33218076|10000|10000|||100.00|77.00|0.00|0.00|63681|63681|0|10000|||102.59|98.95|0.00|-3.02|0000A230|0|1|a5bf435d0da63215`
 
 The 16 fields after the target name are eight pairs of effect flags and values. We're looking for one with either `0E` (status applied to target) or `0F` (status applied to caster).
 In this case, we see `F6FB0E` as the flags, and `4B30000` as the value. `4B3` is the status effect ID for addle, so this is the one we want to look at (this is a simpler
 example, but some abilities may apply 2 or 3 statuses and you'll need to figure out which is which).
 
-NNext, we break down the three leftmost bytes in the flags value into 8-bit signed integers (note that ACT will not write out leading zeroes for this field, so 
+Next, we break down the three leftmost bytes in the flags value into 8-bit signed integers (note that ACT will not write out leading zeroes for this field, so
 `F6FB0E` is really `00F6FB0E`. In this case, `00`, `F6`, and `FB`. Converting to base 10, we get 0, -10, -5, which correspond to the 10% magic reduction and 5% physical
 reduction on Addle.
 
 An example of a line with multiple buff applications might look like this:
 
-`22|2022-09-04T23:23:08.9310000+08:00|102B4E61|Name Removed|64B9|Radiant Finale|102B4E61|
-Name Removed|20E|B940000|F|AA28000|1B|64B98000|0|0|0|0|0|0|0|0|0|0|67593|67593|10000|10000
-|||92.30|100.42|0.00|1.67|67593|67593|10000|10000|||92.30|100.42|0.00|1.67|000075A0|0|8|dfdeb000d8342d05`
+`22|2022-09-04T23:23:08.9310000+08:00|102B4E61|Name Removed|64B9|Radiant Finale|102B4E61|Name Removed|20E|B940000|F|AA28000|1B|64B98000|0|0|0|0|0|0|0|0|0|0|67593|67593|10000|10000|||92.30|100.42|0.00|1.67|67593|67593|10000|10000|||92.30|100.42|0.00|1.67|000075A0|0|8|dfdeb000d8342d05`
 
 Here, we have `B94` applied to the target, and `AA2` applied to the caster (in this case, the caster and target are the same, so it makes no difference).
 The corresponding flags are `000002` and `000000` - so we know that the first buff is applying a 2% damage bonus.
+
+## Further Reading
+
+[AkhMorning has a page](https://www.akhmorning.com/news/the-ups-and-downs-of-statuses/#obtaining--reading-the-values) with more information, as well as
+methods for finding the percentages for buffs which are not applied by an ability.
