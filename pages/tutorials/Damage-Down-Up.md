@@ -25,7 +25,7 @@ Hover over the 'Effects' icons, and look for the line that talks about the damag
 In this case, we have 0, 0, and -38. The zeroes can be ignored, and -38 means that this is a 38% damage down.
 
 If you know the ability ID rather than the name, search for the hex ID by entering it in '0x1234' format
-instead of the class name.
+in the same field.
 
 If you have no idea what ability applied the DD, first search for 'Event Class: BuffApplied' and 
 'Ability/Buff: Damage Down'. This will give you the ID. In this case, it is 0xB5F:
