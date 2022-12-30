@@ -81,7 +81,7 @@ What does the "ModifiableCallout" bit do? It lets the user easily modify the cal
 
 ![image](https://user-images.githubusercontent.com/14287379/158667132-b2d816a9-34c7-414a-9079-93dab4703760.png)
 
-For simple calls, you can also make triggers using easily readable conditions - no regular expressions required!
+For simple calls, you can also make [easy triggers](/pages/tutorials/Easy-Triggers.md) using easily readable conditions - no regular expressions required!
 Plus, since everything is parsed for you, you don't need to worry about log line changes or patches breaking
 your trigger.
 
@@ -202,6 +202,7 @@ Should you require any assistance, you can:
     - [DoT Tracker](/pages/Dot-Tracker.md) - Multi-target DoT tracker + DoT tick tracker.
     - [Timeline Customization](/pages/Timeline-Customization.md) - Triggevent's extensions of Cactbot Timelines.
     - [General Automarker Info](/pages/Automarkers.md) - General info for automarks (Wroth Flames and UWU auto markers have their own pages below).
+    - [Easy Triggers](/pages/tutorials/Easy-Triggers.md) - Short guide for easy triggers.
 - Specific Duties:
     - [Titan Gaol Guide](/pages/Titan-Jail.md) - Setup guide for UWU auto markers and jail plugin callouts.
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.
