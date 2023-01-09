@@ -2,7 +2,7 @@
 layout: default
 title: "Telesto Support"
 permalink: /pages/Telesto-Support/
-description: Triggevent is an FFXIV addon that provides an easy way to make use of the Telesto FFXIV plugin.
+description: Triggevent is an FFXIV addon that provides an easy way to make use of the Telesto FFXIV plugin, including Automarkers.
 ---
 
 # Telesto Support
@@ -32,7 +32,7 @@ In order to make use of Telesto's party list as an end user, all you need to do 
 - Install Telesto
 - Check this box:
 
-![img.png](Telesto-Party.png)
+![Telesto Party](Telesto-Party.png)
 
 - If you need to change the port or host, change the URL (99% of you can ignore this)
 
@@ -52,13 +52,36 @@ when it detects a party change, zone change, or a few other events. That party l
 
 To use Telesto-based automarks, after installing Telesto (and changing the URL if needed), all you need to do is check this box:
 
-![img.png](Telesto-Marks.png)
+![Telesto Marks](Telesto-Marks.png)
 
 Then, *any* trigger using the existing automarks will automatically use this instead.
 
+#### Making Your Own Automarkers
+
+For simple Automarkers, you can easily make them in the UI, by using [Easy Triggers](/pages/tutorials/Easy-Triggers.md).
+This will be sufficient for anything where the markers should be placed on anyone affected by a particular ability or debuff
+(such as Titan Gaols or DSR/UCoB Thunderstruck), though you won't be able to set up a priority system. 
+
+Here is an example:
+
+![Thunderstruck Marker Trigger](/pages/tutorials/Thunderstruck-Mark.png)
+
 ### As a Trigger Developer
 
-Once again, as a developer, you change literally nothing about how you do automarks.
+Once again, as a developer, you change literally nothing about how you do the basic automarks. The only part that changes is
+that Telesto enables you to use specific marks rather than sequential attack markers via the SpecificAutoMarkRequest event:
+```java
+// Basic 'attack' marker, same as before - this works fine with both Telesto and Macros:
+context.accept(new AutoMarkRequest(target));
+// Equivalent of above, in the new format:
+context.accept(new SpecificAutoMarkRequest(target, MarkerSign.ATTACK_NEXT));
+// Use the next available 'bind' marker:
+context.accept(new SpecificAutoMarkRequest(target, MarkerSign.BIND_NEXT));
+// Use the #2 ignore/stop marker:
+context.accept(new SpecificAutoMarkRequest(target, MarkerSign.IGNORE_2));
+// The square marker:
+context.accept(new SpecificAutoMarkRequest(target, MarkerSign.SQUARE));
+```
 
 ## Other Game Commands
 
