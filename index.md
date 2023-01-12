@@ -208,6 +208,7 @@ Should you require any assistance, you can:
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.
     - [Abyssos Triggers](/pages/triggers/Abyssos-Triggers.md)
     - [Another Sil'Dihn Subterrane](/pages/triggers/Sildihn-Triggers.md) Criterion/Savage.
+    - [The Omega Protocol Ultimate (TOP)](/pages/triggers/The-Omega-Protocol-Ultimate.md) - Triggers for The Omega Protocol Ultimate (Coming Soon!)
 - For Devs:
     - [How to make a new module](/pages/Custom-Module.md) - How to stand up a new module from scratch
     - [Javadocs](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) for devs (replace 'master' in the URL with the desired branch)
