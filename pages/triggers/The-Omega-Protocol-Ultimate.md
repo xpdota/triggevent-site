@@ -2,7 +2,7 @@
 layout: default
 title: "The Omega Protocol Ultimate (TOP)"
 permalink: /pages/triggers/The-Omega-Protocol-Ultimate/
-description: Triggevent will have support for The Omega Protocol Ultimate (TOP) coming shortly. Be sure to check back frequently!
+description: Triggevent has support for The Omega Protocol (Ultimate) with Triggers and Automarks
 ---
 
 # The Omega Protocol Ultimate (TOP)
@@ -25,6 +25,27 @@ even if you don't make any triggers, log files are much appreciated, especially 
 a VoD to go along with it. You can post them on the 
 [discussions](https://github.com/xpdota/event-trigger/discussions) area, or send them private
 via discord (xp#0001).
+
+
+Without further ado, here's what's currently available:
+
+## Phase 1
+
+- Looper
+  - Number callouts
+  - Tower/tether callouts
+  - Optional Automarker
+- Pantokrator
+  - Number callouts
+  - Out/in callouts
+  - Tank/cleave bait calls
+  - Optional Automarker
+
+## Phase 2
+
+- Mid/Remote Glitch
+- Tether Partner, PS Icon
+
 
 If you're just a user looking for triggers, you'll have to wait a bit. You should 
 [install Triggevent](https://github.com/xpdota/event-trigger/wiki/Installation-and-Setup), and
