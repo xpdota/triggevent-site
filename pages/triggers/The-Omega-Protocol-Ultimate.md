@@ -45,6 +45,9 @@ Without further ado, here's what's currently available:
 
 - Mid/Remote Glitch
 - Tether Partner, PS Icon
+  - Optional Automarker
+- Sniper Cannon/High-Powered Sniper Cannon
+  - Optional Automarker
 
 
 If you're just a user looking for triggers, you'll have to wait a bit. You should 

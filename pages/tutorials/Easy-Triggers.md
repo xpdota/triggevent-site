@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Easy Triggers for FFXIV Tutorial"
+title: "Easy Triggers - How to Make FFXIV ACT Triggers the Easy Way!"
 permalink: /pages/Easy-Triggers-Tutorial/
-description: Triggevent's Easy Triggers allow you to create quick triggers for FFXIV without needing to know log lines or regex.
+description: Triggevent's Easy Triggers let you make basic ACT triggers without the learning curve. No regex, no log lines, just user-friendly triggers.
 ---
 
 # Introduction
@@ -63,7 +63,7 @@ When the DSR "Thunderstruck" buff is applied, it will throw a marker on someone.
 settings (in terms of macro keys or Telesto). Making an automarker for an ability or buff really is this simple. No more
 waiting around for someone else to make and share one.
 
-## Conditional Example (Unreleased Functionality)
+## Conditional Example
 
 You can have an if/else conditional as an action. Here is an example
 of how you might use this:
@@ -72,3 +72,33 @@ of how you might use this:
 
 This trigger is equivalent to the built-in DSR P5 Empty Dimension trigger. It will either tell you "In", or "In with Lightning",
 based on whether or not you have the Thunderstruck debuff.
+
+## Advanced Scripting
+
+You can expose [Groovy Scripts](https://github.com/xpdota/event-trigger/wiki/Groovy-Examples) to easy triggers.
+
+You need to do two things in your script:
+
+1. Check the "Run on startup" checkbox
+2. Put your function into the global namespace
+
+Here is an example for how one would manually send a Telesto request that echos some text into the chat (purely an 
+example - for actual usage, there is built-in Telesto support already):
+
+```groovy
+import java.net.http.*
+
+http = HttpClient.newBuilder().build()
+
+globals.echoText = text -> {
+	http.send(HttpRequest.newBuilder(new URI("http://localhost:51323/"))
+		.POST(HttpRequest.BodyPublishers.ofString('{ "version": 1, "id": 111, "type": "ExecuteCommand", "payload": { "command": "/e ' + text + '" } }')).build(),
+		HttpResponse.BodyHandlers.ofString()
+	)
+}
+```
+
+Then, you'd be able to use a Groovy action with the code `globals.echoText.call(event.ability.name)` - this would
+result in an echo message indicating the ability you're casting into chat:
+
+![Easy Trigger Groovy Example](Easy-Trigger-Groovy-Example.png)
