@@ -2,16 +2,16 @@
 layout: default
 title: "Telesto Support"
 permalink: /pages/Telesto-Support/
-description: Triggevent is an FFXIV addon that provides an easy way to make use of the Telesto FFXIV plugin, including Automarkers.
+description: Triggevent is an FFXIV addon that enables an easy way to make use of the Telesto FFXIV plugin, including Automarkers.
 ---
 
 # Telesto Support
 
-[Telesto](https://github.com/paissaheavyindustries/Telesto) is a Dalamud plugin that allows certain commands to be sent directly 
+[Telesto](https://github.com/paissaheavyindustries/Telesto) is a Dalamud plugin that enables Triggevent to send commands directly
 to the game, with the obvious and most common use case being 
 the ability to use automarkers without setting up macros. It also supports pulling the party list from the game directly,
 which is great because ACT (and by extension, both Triggernometry and OverlayPlugin) doesn't tell us the *order* of the party list.
-In addition, Triggernometry also used to have some party list bugs on top of that.
+In addition, ACT and Triggernometry sometimes have bugs with the party list, so having an alternative is a good thing.
 
 This has been the source of many automark issues - someone has their Triggernometry party list set up differently than their
 in-game sorting, and the mismatch causes the wrong people to be marked. In theory, Telesto fixes this for Triggernometry.
@@ -19,11 +19,12 @@ in-game sorting, and the mismatch causes the wrong people to be marked. In theor
 However, in Triggernometry, there's no direct integration between the two. It is entirely on the trigger dev to rewrite their trigger
 to use Telesto's party list instead. Same with markers - it's on the dev to do that.
 
-So how can this be done better?
+So how can this be done better? Triggevent provides a solid way to integrate with Telesto. 
 
 ## Party List
 
-Triggevent has seamless integration of Telesto's party list.
+Triggevent has seamless integration of Telesto's party list functionality. This allows Triggvent's party list to be sorted
+correctly, and also account for disconnected players.
 
 ### As an End User
 
@@ -87,7 +88,9 @@ context.accept(new SpecificAutoMarkRequest(target, MarkerSign.SQUARE));
 
 ### As an End User
 
-Once again, just install Telesto.
+Once again, just install Telesto, and any pre-made triggers will work.
+
+To use them in easy triggers, there is a new "Telesto Game Command" easy trigger action.
 
 ### As a Trigger Developer
 
@@ -98,3 +101,9 @@ context.accept(new TelestoGameCommand("/echo Here's some text to echo"));
 ```
 
 (Or eventMaster.pushEvent as appropriate).
+
+## Doodles
+
+Drawing in-game is a controversial feature, so there are no triggers in the base installation that make use of this
+functionality. While I can't stop you from doing it, anything you do make should only be used for debugging purposes,
+and not actual gameplay.

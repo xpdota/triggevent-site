@@ -46,10 +46,10 @@ Without further ado, here's what's currently available:
 - Mid/Remote Glitch
 - Tether Partner, PS Icon
   - Optional Automarker
+- Pile Pitch/Beyond Defense/Flares
+
+## Phase 3
+
 - Sniper Cannon/High-Powered Sniper Cannon
   - Optional Automarker
-
-
-If you're just a user looking for triggers, you'll have to wait a bit. You should 
-[install Triggevent](https://github.com/xpdota/event-trigger/wiki/Installation-and-Setup), and
-the automatic updates will keep you up to date when new triggers are released.
+- Hello World
