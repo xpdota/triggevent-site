@@ -46,6 +46,7 @@ Without further ado, here's what's currently available:
 - Mid/Remote Glitch
 - Tether Partner, PS Icon
   - Optional Automarker
+- M/F In/Out
 - Pile Pitch/Beyond Defense/Flares
 
 ## Phase 3
@@ -53,3 +54,10 @@ Without further ado, here's what's currently available:
 - Sniper Cannon/High-Powered Sniper Cannon
   - Optional Automarker
 - Hello World
+- Monitor
+  - Optional Automarker
+
+# Omega Protocol Automarkers
+
+The automarkers all use a common priority. Most of them are customizable, in the sense that you 
+can choose exactly which markers they place.

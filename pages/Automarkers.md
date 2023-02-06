@@ -2,14 +2,16 @@
 layout: default
 title: "Triggevent FFXIV Automarkers"
 permalink: /pages/Automarkers/
-description: Triggevent is an FFXIV addon with support for automarks/automarkers, including UWU Titan Gaols and Wroth Flames.
+description: Triggevent is an FFXIV addon with support for automarks/automarkers, including UWU Titan Gaols, Wroth Flames, and Omega Protocol.
 ---
 
 # Automarkers
 
-If you're looking for FFXIV UWU Titan Jail auto markers specifically, visit the [Titan Jail](Titan-Jail.md) page.
-
-For FFXIV DSR Wroth Flames auto marks, visit the [Dragonsong's Reprise](Dragonsong-Triggers.md) page.
+This page is a general overview of how FFXIV automarkers work in Triggevent. For information on 
+automarkers for specific duties, please visit the relevant pages:
+- For UWU Titan Jail auto markers specifically, visit the [Titan Jail](Titan-Jail.md) page.
+- For DSR Wroth Flames auto marks, visit the [Dragonsong's Reprise](Dragonsong-Triggers.md) page.
+- For The Omega Protocol (Ultimate) marks, visit the [Omega Protocol](/pages/triggers/The-Omega-Protocol-Ultimate.md) page. 
 
 This page covers general setup and development of new automarks.
 
