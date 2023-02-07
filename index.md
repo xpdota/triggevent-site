@@ -120,6 +120,8 @@ Easily access information about events, combatants, and more.
 
 ![Overview](https://user-images.githubusercontent.com/14287379/142812965-7666c15e-12b3-4b6c-91a6-ed38820a7aa8.png)
 
+This can be used as a [combat log](/pages/tutorials/Combat-Log-Events-Tab.md) since the one in-game is a bit lacking.
+
 Makes it easier to create triggers and overlays. Even if you're developing triggers for a
 different plugin like Cactbot or Triggernometry, this is useful.
 
@@ -203,6 +205,7 @@ Should you require any assistance, you can:
     - [Timeline Customization](/pages/Timeline-Customization.md) - Triggevent's extensions of Cactbot Timelines.
     - [General Automarker Info](/pages/Automarkers.md) - General info for automarks (Wroth Flames and UWU auto markers have their own pages below).
     - [Easy Triggers](/pages/tutorials/Easy-Triggers.md) - Short guide for easy triggers.
+    - [Combat Log/Events Tab](/pages/tutorials/Combat-Log-Events-Tab.md) - Events Tab, which functions as a combat log of sorts.
 - Specific Duties:
     - [Titan Gaol Guide](/pages/Titan-Jail.md) - Setup guide for UWU auto markers and jail plugin callouts.
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.
