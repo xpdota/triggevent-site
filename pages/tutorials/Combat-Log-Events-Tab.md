@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Enhanced Combat Log for FFXIV"
-permalink: /pages/Automarkers/
+permalink: /pages/tutorials/Combat-Log-Events-Tab/
 description: FFXIV's in-game combat log is quite lacking. Triggevent provides a significantly improved view of combat events.
 ---
 
