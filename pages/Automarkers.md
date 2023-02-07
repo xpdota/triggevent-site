@@ -10,8 +10,9 @@ description: Triggevent is an FFXIV addon with support for automarks/automarkers
 This page is a general overview of how FFXIV automarkers work in Triggevent. For information on 
 automarkers for specific duties, please visit the relevant pages:
 - For UWU Titan Jail auto markers specifically, visit the [Titan Jail](Titan-Jail.md) page.
+  - This acts as a unified replacement both for the various triggernometry-based markers, as well as the standalone jail plugin.
 - For DSR Wroth Flames auto marks, visit the [Dragonsong's Reprise](Dragonsong-Triggers.md) page. 
-  - There is also a thunderstruck automarker, and Easy Triggers make it trivial to build your own automarkers for other mechanics such as Doom.
+  - There is also a Dragonsong thunderstruck automarker, and Easy Triggers make it trivial to build your own automarkers for other mechanics such as Doom.
 - For The Omega Protocol (Ultimate) marks, visit the [Omega Protocol](/pages/triggers/The-Omega-Protocol-Ultimate.md) page. It currently includes:
   - Looper nth in line debuff automarker
   - Pantokrator nth in line debuff automarker
@@ -19,7 +20,7 @@ automarkers for specific duties, please visit the relevant pages:
   - Sniper Cannon (P3 transition) automarkers
   - Monitor automark
 
-This page covers general setup and development of new automarks.
+This page covers general setup of automarks, as well as information on how to make new automarkers.
 
 ![Automarkers Config Panel](auto-marks.png)
 
