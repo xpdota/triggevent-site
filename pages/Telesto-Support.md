@@ -107,3 +107,15 @@ context.accept(new TelestoGameCommand("/echo Here's some text to echo"));
 Drawing in-game is a controversial feature, so there are no triggers in the base installation that make use of this
 functionality. While I can't stop you from doing it, anything you do make should only be used for debugging purposes,
 and not actual gameplay.
+
+You will need to enable the necessary checkboxes on the Telesto page, and accept the warnings. Then, you will have
+access to a few new easy trigger actions.
+
+For example, if you'd like a particular status effect to be displayed on top of players, you can do something like this:
+
+![Doodle Easy Trigger Example](Doodle-Easy-Trigger-Example.png)
+
+In a debuff-based mechanic, this would allow you to more clearly see who has what debuff if the party list isn't
+suiting your needs:
+
+![Debuff Displayed on Target](Debuff-Displayed.png)
