@@ -111,7 +111,13 @@ and not actual gameplay.
 You will need to enable the necessary checkboxes on the Telesto page, and accept the warnings. Then, you will have
 access to a few new easy trigger actions.
 
-For example, if you'd like a particular status effect to be displayed on top of players, you can do something like this:
+Here's an example.
+
+### Nameplate Debuffs Equivalent
+
+Sadly, the original Nameplate Debuffs addon is no longer maintained. However, you can recreate a rough approximation of it.
+
+To have a particular status effect to be displayed on top of players, you can do something like this:
 
 ![Doodle Easy Trigger Example](Doodle-Easy-Trigger-Example.png)
 
@@ -119,3 +125,13 @@ In a debuff-based mechanic, this would allow you to more clearly see who has wha
 suiting your needs:
 
 ![Debuff Displayed on Target](Debuff-Displayed.png)
+
+This cleanly takes care of what would otherwise be a challenge. This is what it has to handle that you would otherwise
+have to do yourself:
+1. Parse the log line to find the status effect ID and the ID of the target (possibly even more, if you'd like to have more conditions)
+2. Check if it passes specific conditions (do you only want to display certain statuses? what about only enemy-applied things?)
+3. Use an external resource such as XIVAPI or Lumina to convert the status effect ID to an icon ID
+4. Formulate the JSON payload
+5. Send it
+
+You don't have to do all this - you can focus on the actual trigger logic.
