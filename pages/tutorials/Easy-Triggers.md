@@ -103,4 +103,4 @@ result in an echo message indicating the ability you're casting into chat:
 
 ![Easy Trigger Groovy Example](Easy-Trigger-Groovy-Example.png)
 
-This makes it easy to write [Scripted Automarkers](/pages/Automarkers.md#scripted-auto-marks)
+This makes it easy to write [Scripted Automarkers](/pages/Automarkers.md#making-your-own-automarks-with-scripts)
