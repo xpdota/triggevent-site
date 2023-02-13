@@ -57,6 +57,13 @@ Without further ado, here's what's currently available:
 - Monitor
   - Optional Automarker
 
+## Phase 4
+- Blue Screen: Basic Callouts
+
+## Phase 5
+- Solar Ray (Buster)
+- Basic Callouts for Delta
+
 # Omega Protocol Automarkers
 
 The automarkers all use a common priority. Most of them are customizable, in the sense that you 

@@ -102,7 +102,140 @@ For example, if you wanted to mark people with the Thunderstruck debuff (i.e. re
 
 ![Nael Thunder Automark Part 2](nael-am-2.png)
 
-# Dev Info
+# Making your own Automarks with Scripts
+
+See the Easy Triggers [Script Action](/pages/tutorials/Easy-Triggers.md#advanced-scripting) for more details.
+
+The short version is, you can write a script to handle automarkers, and call that script from an Easy Trigger.
+Here is an example of how one might implement the TOP Sniper Cannon automarker with a script:
+
+```groovy
+import gg.xp.xivsupport.events.triggers.marks.adv.*
+// Define priority
+prio = [Job.SCH, Job.DRK, Job.MNK, Job.DRG, Job.DNC, Job.SMN, Job.GNB, Job.SGE]
+
+def mark(player, sign) {
+	eventMaster.pushEvent(new SpecificAutoMarkRequest(player, sign))
+}
+
+// Define our function
+globals.sniperAM = { dryRun = false ->
+	log.info "Sniper AM Start"
+	// Get party list
+	party = state.partyList
+	// Sort party list according to our priority
+	party.sort { member -> prio.indexOf(member.job) }
+
+	// Start with empty lists for each mechanic
+	sniper = []
+	hpSniper = []
+	nothing = []
+	// Categorize players according to their debuff
+	party.each { member -> 
+		if (statusEffectRepository.isStatusOnTarget(member, 0xD61)) {
+			sniper += member
+		}
+		else if (statusEffectRepository.isStatusOnTarget(member, 0xD62)) {
+			hpSniper += member
+		}
+		else {
+			nothing += member
+		}
+	}
+	log.info "Sniper: {}, HP: {}, Nothing: {}", sniper, hpSniper, nothing
+	// Trigger the AMs
+	if (!dryRun) {
+		sniper.each { player -> mark(player, MarkerSign.ATTACK_NEXT) }
+		hpSniper.each { player -> mark(player, MarkerSign.IGNORE_NEXT) }
+		nothing.each { player -> mark(player, MarkerSign.BIND_NEXT) }
+	}
+	log.info "Sent Marks"
+	return ["Sniper": sniper.collect{it.name}, "High Power Sniper": hpSniper.collect{it.name}, "Nothing": nothing.collect{it.name}]
+}
+// Leave this here 
+globals.sniperAM.call(true)
+```
+
+Be sure to run the script, and also enable "Run on Startup" to have it work automatically without the need to run the script.
+
+Notice how we've assigned our script to `globals.sniperAM` - this means we can reference it via a groovy easy trigger action:
+
+![Sniper Cannon Automarker Easy Trigger](sniper-AM_ET.png)
+
+This trigger will:
+1. Clear existing markers
+2. Wait 100ms (so that the other buffs have time to appear)
+3. Execute our custom script
+4. Wait 20 seconds
+5. Clear markers again
+
+The actual script is quite simple - establish a job priority, sort the party list according to that priority,
+then check what debuffs each player has and assign markers accordingly. Because Triggevent tracks all buffs and debuffs
+for you, you can simply query whether or not a player has a particular status effect, rather than needing a separate trigger
+to collect buffs.
+
+Here's another example, this time a Run: Dynamis trigger, which will first mark people with one stack of dynamis who do not have
+the "first in line" buff. Then, it will mark people with two stacks of dynamis who have neither first nor second in line, and will
+never mark more than four people in total:
+
+```groovy
+import gg.xp.xivsupport.events.triggers.marks.adv.*
+
+toClear = []
+
+def mark(player, sign) {
+	eventMaster.pushEvent(new SpecificAutoMarkRequest(player, sign))
+	toClear += player
+}
+
+// Define our function
+globals.dynAM = { dryRun = false ->
+	log.info "Dynamis AM Start"
+	// Get party list
+	party = state.partyList
+	// Sort party list according to our priority
+	party.sort { member -> buffs.buffStacksOnTarget(member, 3444) }
+	limit = 4
+	// Mark people with two stacks
+	party.each { member ->
+		if (limit <= 0) {
+			log.info "Skipping mark, hit limit"
+			return
+		}
+		if ((buffs.buffStacksOnTarget(member, 3444) == 1) && !buffs.isStatusOnTarget(member, 3004)) {
+			log.info "Marking {}", member.name
+			if (!dryRun) {
+				mark member, MarkerSign.ATTACK_NEXT
+				limit--
+			}
+		}
+		if ((buffs.buffStacksOnTarget(member, 3444) == 2) && !buffs.isStatusOnTarget(member, 3004) && !buffs.isStatusOnTarget(member, 3005)) {
+			log.info "Marking {}", member.name
+			if (!dryRun) {
+				mark member, MarkerSign.ATTACK_NEXT
+				limit--
+			}
+		}
+	}
+}
+
+globals.dynAMclear = { dryRun = false ->
+	log.info "Dynamis AM Clear"
+	toClear.each { member -> mark member, MarkerSign.CLEAR }
+	toClear.clear()
+}
+
+// Leave this here 
+globals.dynAM.call(true)
+globals.dynAMclear.call(true)
+```
+
+This script also includes a custom clear function, which you can use instead of the "clear all marks"
+action. This allows it to only clear the markers that it was reponsible for, not markers from other
+triggers or markers manually placed by players.
+
+
+# Making Automarks in the Code / As a Separate Module
 
 If you wish to create your own automarker triggers, both the Titan Jail and Wroth Flames automarks are great
 examples. The Titan Jail trigger is in `JailSolver.java`, and sends requests like this (the list of players to

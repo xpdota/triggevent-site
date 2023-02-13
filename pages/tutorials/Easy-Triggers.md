@@ -102,3 +102,5 @@ Then, you'd be able to use a Groovy action with the code `globals.echoText.call(
 result in an echo message indicating the ability you're casting into chat:
 
 ![Easy Trigger Groovy Example](Easy-Trigger-Groovy-Example.png)
+
+This makes it easy to write [Scripted Automarkers](/pages/Automarkers.md#scripted-auto-marks)
