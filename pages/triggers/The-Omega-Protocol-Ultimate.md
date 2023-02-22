@@ -58,13 +58,28 @@ Without further ado, here's what's currently available:
   - Optional Automarker
 
 ## Phase 4
-- Blue Screen: Basic Callouts
+- Blue Screen: Basic Callouts, including who has stacks, and when to move in-out
 
 ## Phase 5
 - Solar Ray (Buster)
-- Basic Callouts for Delta
+- Run: Dynamis (Delta Version)
+  - Simple Callouts
+  - Simple Near/Distant world Automark
+- Run: Dynamis (Sigma Version)
+  - Simple Callouts
+  - Comprehensive Automark
+- Run: Dynamis (Omega Version)
+  - Simple Callouts
+  - Comprehensive Auto marker
 
 # Omega Protocol Automarkers
 
-The automarkers all use a common priority. Most of them are customizable, in the sense that you 
-can choose exactly which markers they place.
+Each automarker can be independently enabled or disabled. Some allow for customization of the job priority,
+and may also allow customization of which marker each role should receive.
+
+If those are not enough for you, you can also develop your own, using one of many options. For simple tasks
+(such as a simple mark on people who have a debuff), you can use 
+[easy trigger automarkers](/pages/Automarkers.md#making-your-own-automarks-using-easy-triggers). If you have
+more complex needs, such as marking people who are *not* targeted with something, or need some kind of priority,
+you can use [scripted automarkers](/pages/Automarkers.md#making-your-own-automarks-with-scripts) or
+even [develop your own module](/pages/Automarkers.md#making-automarks-in-the-code--as-a-separate-module).
