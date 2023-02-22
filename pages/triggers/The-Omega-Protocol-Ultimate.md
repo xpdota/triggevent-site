@@ -84,7 +84,7 @@ and may also allow customization of which marker each role should receive.
 
 If those are not enough for you, you can also develop your own, using one of many options. For simple tasks
 (such as a simple mark on people who have a debuff), you can use 
-[easy trigger automarkers](/pages/Automarkers.md#making-your-own-automarks-using-easy-triggers). If you have
+[easy trigger automarkers](../Automarkers.md#making-your-own-automarks-using-easy-triggers). If you have
 more complex needs, such as marking people who are *not* targeted with something, or need some kind of priority,
-you can use [scripted automarkers](/pages/Automarkers.md#making-your-own-automarks-with-scripts) or
-even [develop your own module](/pages/Automarkers.md#making-automarks-in-the-code--as-a-separate-module).
+you can use [scripted automarkers](../Automarkers.md#making-your-own-automarks-with-scripts) or
+even [develop your own module](../Automarkers.md#making-automarks-in-the-code--as-a-separate-module).

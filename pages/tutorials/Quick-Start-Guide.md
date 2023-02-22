@@ -120,7 +120,7 @@ Triggevent has many features, so be sure to check everything else out!
 
 Here are some examples:
 
-- [Cooldown Tracker](/pages/Cooldown-Tracker.md) - Personal + Party Cooldown tracker.
-- [DoT Tracker](/pages/Dot-Tracker.md) - Multi-target DoT tracker + DoT tick tracker.
-- [Timeline Customization](/pages/Timeline-Customization.md) - Triggevent's extensions of Cactbot Timelines.
-- [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.
+- [Cooldown Tracker](../Cooldown-Tracker.md) - Personal + Party Cooldown tracker.
+- [DoT Tracker](../Dot-Tracker.md) - Multi-target DoT tracker + DoT tick tracker.
+- [Timeline Customization](../Timeline-Customization.md) - Triggevent's extensions of Cactbot Timelines.
+- [Dragonsong Triggers, including Wroth Flames Automarker](../Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.

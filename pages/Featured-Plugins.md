@@ -13,7 +13,7 @@ To install or remove plugins, navigate to Plugin Settings > Manage Addons:
 
 ## Creating a Plugin
 
-See [Custom Module](/pages/Custom-Module.md#out-of-tree) and [Example Module](https://github.com/xpdota/triggevent-example-module) for more information.
+See [Custom Module](Custom-Module.md#out-of-tree) and [Example Module](https://github.com/xpdota/triggevent-example-module) for more information.
 
 The example module project contains everything necessary to build and distribute a plugin (except Triggevent itself), including GitHub actions scripts
 to build and publish it on github-pages.

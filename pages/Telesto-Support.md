@@ -59,7 +59,7 @@ Then, *any* trigger using the existing automarks will automatically use this ins
 
 #### Making Your Own Automarkers
 
-For simple Automarkers, you can easily make them in the UI, by using [Easy Triggers](/pages/tutorials/Easy-Triggers.md).
+For simple Automarkers, you can easily make them in the UI, by using [Easy Triggers](tutorials/Easy-Triggers.md).
 This will be sufficient for anything where the markers should be placed on anyone affected by a particular ability or debuff
 (such as Titan Gaols or DSR/UCoB Thunderstruck), though you won't be able to set up a priority system. 
 

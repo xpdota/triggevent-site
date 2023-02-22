@@ -19,7 +19,7 @@ This depends on your specific use cases.
 Triggevent has a very feature-rich DoT tracker.
 It is tailor-made for FFXIV game mechanics, including support for multiple targets,
 showing ticks, showing application delay, and more. You can read about it on the 
-[DoT Tracker](/pages/Dot-Tracker.md) page. 
+[DoT Tracker](Dot-Tracker.md) page. 
 
 There are other options as well. There are Dalamud plugins that can display debuffs
 directly on the enemy list. If you don't need multi-target support, there are even more
@@ -30,7 +30,7 @@ directly on your hotbar.
 
 Triggevent also has a very solid CD tracker, for both personal and party cooldowns.
 It shows the time remaining until off CD, and the remaining active time when it has
-been used. You can read more on the [CD Tracker](/pages/Cooldown-Tracker.md) page.
+been used. You can read more on the [CD Tracker](Cooldown-Tracker.md) page.
 
 Other options I recommend include JobBars, and Cactbot Jobs once again.
 
@@ -69,14 +69,14 @@ that *is* there is significantly easier to use. Here is what is currently availa
 - Use rich conditions, such as "target of the ability is a party member", or "the debuff has an initial duration of 30 seconds"
   - You can also write custom code for your own filters, allowing you to use anything that isn't supported yet. 
     For example, `event.target.job.isTank()` would filter to only events where the target is a tank.
-- [Automarkers](/pages/Automarkers.md) available as an action - no more waiting for someone else to make them (and then waiting longer for the bugs to be ironed out)
+- [Automarkers](Automarkers.md) available as an action - no more waiting for someone else to make them (and then waiting longer for the bugs to be ironed out)
 - Delays between actions
 - Icons on your overlay
 - Dynamic on-screen text (e.g. displaying remaining duration of a castbar or buff)
 
 In addition, the ability to create timeline triggers - something which until now 
 would require writing your own Cactbot triggers - is exposed in a nice graphical timeline editor.
-You can check it out more on the [Timeline Customization](/pages/Timeline-Customization.md) page.
+You can check it out more on the [Timeline Customization](Timeline-Customization.md) page.
 
 Lastly, if you do want to go for the most advanced triggers, and you're not afraid to get your
 hands dirty with some code, you can [code your own module](https://github.com/xpdota/triggevent-example-module).
