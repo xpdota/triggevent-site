@@ -152,7 +152,7 @@ as possible.
 
 ### Dominion
 
-This is disabled by default, but can be enabled. It works like the [Titan Jail plugin](/pages/Titan-Jail.md),
+This is disabled by default, but can be enabled. It works like the [Titan Jail plugin](../Titan-Jail.md),
 but is only a personal callout (no automarks). The required setup is to set up your priority list, where higher
 up on the list indicates that they will take a left tower, and lower indicates that they will take a right
 tower:

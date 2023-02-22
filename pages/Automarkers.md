@@ -13,7 +13,7 @@ automarkers for specific duties, please visit the relevant pages:
   - This acts as a unified replacement both for the various triggernometry-based markers, as well as the standalone jail plugin.
 - For DSR Wroth Flames auto marks, visit the [Dragonsong's Reprise](Dragonsong-Triggers.md) page. 
   - There is also a Dragonsong thunderstruck automarker, and Easy Triggers make it trivial to build your own automarkers for other mechanics such as Doom.
-- For The Omega Protocol (Ultimate) marks, visit the [Omega Protocol](/pages/triggers/The-Omega-Protocol-Ultimate.md) page. It currently includes:
+- For The Omega Protocol (Ultimate) marks, visit the [Omega Protocol](triggers/The-Omega-Protocol-Ultimate.md) page. It currently includes:
   - Looper nth in line debuff automarker
   - Pantokrator nth in line debuff automarker
   - Party Synergy/Playstation head markers automarks - separate customization for mid/remote
@@ -104,7 +104,7 @@ For example, if you wanted to mark people with the Thunderstruck debuff (i.e. re
 
 # Making your own Automarks with Scripts
 
-See the Easy Triggers [Script Action](/pages/tutorials/Easy-Triggers.md#advanced-scripting) for more details.
+See the Easy Triggers [Script Action](tutorials/Easy-Triggers.md#advanced-scripting) for more details.
 
 The short version is, you can write a script to handle automarkers, and call that script from an Easy Trigger.
 Here is an example of how one might implement the TOP Sniper Cannon automarker with a script:
