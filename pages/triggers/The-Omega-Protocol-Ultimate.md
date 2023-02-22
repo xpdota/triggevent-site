@@ -54,7 +54,12 @@ Without further ado, here's what's currently available:
 - Sniper Cannon/High-Powered Sniper Cannon
   - Optional Automarker
 - Hello World
+  - Separate callouts for each debuff
+  - Can be modified based on defamation color
+  - Separate callouts for the last round
+  - Want to make it even more obvious? Set the defamation/stack callouts to red/blue accordingly.
 - Monitor
+  - Callouts, including which direction the boss is cleaving
   - Optional Automarker
 
 ## Phase 4
