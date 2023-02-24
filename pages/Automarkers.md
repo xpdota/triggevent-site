@@ -104,7 +104,16 @@ For example, if you wanted to mark people with the Thunderstruck debuff (i.e. re
 
 # Making your own Automarks with Scripts
 
+## Entirely Scripted Trigger
+
+You can now write a complete trigger entirely within Groovy.
+
+This section will be updated soon.
+
+## Hybrid Easy Trigger/Scripted
+
 See the Easy Triggers [Script Action](tutorials/Easy-Triggers.md#advanced-scripting) for more details.
+It is generally cleaner and easier to write the trigger purely in scripts.
 
 The short version is, you can write a script to handle automarkers, and call that script from an Easy Trigger.
 Here is an example of how one might implement the TOP Sniper Cannon automarker with a script:
