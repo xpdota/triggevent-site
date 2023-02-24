@@ -207,6 +207,7 @@ Should you require any assistance, you can:
     - [General Automarker Info](/pages/Automarkers.md) - General info for automarks (Wroth Flames and UWU auto markers have their own pages below).
     - [Easy Triggers](/pages/tutorials/Easy-Triggers.md) - Short guide for easy triggers.
     - [Combat Log/Events Tab](/pages/tutorials/Combat-Log-Events-Tab.md) - Events Tab, which functions as a combat log of sorts.
+    - [Writing Triggers and Scripts in Groovy](/pages/groovy/Groovy-Scripting.md)
 - Specific Duties:
     - [Titan Gaol Guide](/pages/Titan-Jail.md) - Setup guide for UWU auto markers and jail plugin callouts.
     - [Dragonsong Triggers, including Wroth Flames Automarker](/pages/Dragonsong-Triggers.md) - Overview of DSR callouts and wroth flames auto marks.
