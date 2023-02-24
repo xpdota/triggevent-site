@@ -106,9 +106,83 @@ For example, if you wanted to mark people with the Thunderstruck debuff (i.e. re
 
 ## Entirely Scripted Trigger
 
-You can now write a complete trigger entirely within Groovy.
+You can now write a complete trigger entirely within Groovy. See [Groovy Scripting](groovy/Groovy-Scripting.md) for more
+details.
 
-This section will be updated soon.
+You'll need to use `groovyTriggers.add` to register the trigger. You'll also need to run the script at least once so
+that it registers. Running the script again will replace the old trigger, assuming you keep the `named` parameter the same.
+To make it persistent, check the "Run on Startup" box.
+
+Here's an example for TOP P3 transition (sniper cannon):
+
+```groovy
+// Define priority
+prio = [Job.SCH, Job.DRK, Job.MNK, Job.DRG, Job.DNC, Job.SMN, Job.GNB, Job.SGE]
+
+def mark(player, sign) {
+	eventMaster.pushEvent(new SpecificAutoMarkRequest(player, sign))
+}
+
+// Define our function
+def sniperAM(dryRun = false) {
+	log.info "Sniper AM Start"
+	// Get party list
+	party = state.partyList
+	// Sort party list according to our priority
+	party.sort { member -> prio.indexOf(member.job) }
+
+	// Start with empty lists for each mechanic
+	sniper = []
+	hpSniper = []
+	nothing = []
+	// Categorize players according to their debuff
+	party.each { member -> 
+		if (statusEffectRepository.isStatusOnTarget(member, 0xD61)) {
+			sniper += member
+		}
+		else if (statusEffectRepository.isStatusOnTarget(member, 0xD62)) {
+			hpSniper += member
+		}
+		else {
+			nothing += member
+		}
+	}
+	log.info "Sniper: {}, HP: {}, Nothing: {}", sniper, hpSniper, nothing
+	// Trigger the AMs
+	if (!dryRun) {
+		sniper.each { player -> mark player, MarkerSign.ATTACK_NEXT }
+		mark hpSniper[0], MarkerSign.BIND1
+		mark hpSniper[1], MarkerSign.IGNORE1
+		mark nothing[0], MarkerSign.BIND2
+		mark nothing[1], MarkerSign.IGNORE2
+	}
+	log.info "Sniper AM Done"
+	// For testing, return the values
+	return ["Sniper": sniper.collect{it.name}, "High Power Sniper": hpSniper.collect{it.name}, "Nothing": nothing.collect{it.name}]
+}
+
+
+// The actual trigger
+groovyTriggers.add {
+	// Name should be unique
+	named "Sniper Cannon AM"
+	type BuffApplied
+	when { it.buffIdMatches(0xD61) }
+	sequence { e1, s -> 
+		s.waitMs(100)
+		sniperAM()
+	}
+}
+
+// Run the function once. This isn't strictly needed, but helps with performance, 
+// and also will be more likely to discover any problems in your function before
+// running it for real.
+// The dryRun parameter causes it to not actually do any marking. For testing
+// the script, you'd want to import a log, play it until the part where you'd expect
+// the AM to fire, and then you can run this as many times as needed.
+// This also returns the data, so you can inspect it in the Groovy tab.
+sniperAM(true)
+```
 
 ## Hybrid Easy Trigger/Scripted
 
