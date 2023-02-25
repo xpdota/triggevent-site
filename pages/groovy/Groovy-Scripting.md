@@ -71,7 +71,7 @@ Here is an example of a simple (non-sequential) trigger:
 groovyTriggers.add {
 	named "foo" 
 	type AbilityCastStart 
-	when { log.info "foo" ; it.abilityIdMatches(0x5EF8) } 
+	when { it.abilityIdMatches(0x5EF8) } 
 	then { event, context -> 
 		context.accept(new TtsRequest(event.ability.name)) 
 		log.info "bar"
@@ -79,23 +79,34 @@ groovyTriggers.add {
 }
 ```
 
-This will call out the name of the ability when you start casing Dosis III.
+Here's a more in-depth example. This triggers when you start casting Broil IV. It will immediately call out TTS "foo",
+and if you have the callout overlay enabled, will display a rapidly-changing number showing you how many milliseconds
+are left on the cast bar, with the text having a cyan color.
+
+Then, once the cast snapshots, it will do a text-only callout showing the amount of damage the ability did, in magenta,
+with an icon taken from a status effect, replacing the previous text entirely (rather than displaying both), and will
+remain there for 1000 milliseconds (1 second).
 
 ```groovy
 groovyTriggers.add {
-	named "bar"
-	type AbilityUsedEvent
-	when { it.abilityIdMatches(0x5EFB) }
-	sequence { e1, s -> 
-		s.accept(new TtsRequest("foo"))
-		s.waitMs(1_000)
-		s.accept(new TtsRequest("bar"))
-//		s.accept(new SpecificAutoMarkRequest(e1.source, MarkerSign.IGNORE1))
-	}
+    // Name should be unique
+    named "Sequential Trigger Test"
+    // Start on casting Broil IV
+    when { AbilityCastStart acs -> acs.abilityIdMatches(0x6509) }
+    sequence { e1, s ->
+        // Call out "foo" and a constantly updating text display defined as a GroovyString,
+        // plus a color in long form
+        callout { tts "foo" text "${->e1.estimatedRemainingDuration.toMillis()}" color new Color(0, 255, 255) }
+
+        // Then wait for the cast to snapshot
+        snapshot = s.waitEvent(AbilityUsedEvent, aue -> aue.abilityIdMatches(0x6509))
+
+        // Do another callout, no TTS, just text. Color in short form, plus a status icon, and a specific duration
+        callout { text "${snapshot.damage}" color 255,0,255 statusIcon 0x77F replaces last duration 1000 }
+    }
 }
 ```
 
-This will call out "foo" when you use Dyskrasia II, wait one second, then call out "bar".
 
 ## Injecting Your Own Globals
 
