@@ -8,7 +8,10 @@ description: Triggevent is an FFXIV addon with native Linux support (no WINE, hu
 # Linux Install
 
 First, grab the latest release from the [Github releases page](https://github.com/xpdota/event-trigger/releases). 
-The file you want is `triggevent-linux.zip`. Unzip this file somewhere.
+The file you want is `triggevent-linux.zip`. Unzip this file somewhere, and fix the permissions on the .sh files:
+```shell
+chmod +x *.sh
+```
 
 ## Java Install
 
