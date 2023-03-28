@@ -51,7 +51,7 @@ when it detects a party change, zone change, or a few other events. That party l
 
 ### As an End User
 
-To use Telesto-based automarks, after installing Telesto (and changing the URL if needed), all you need to do is check this box:
+To use Telesto-based automarks, after installing Telesto (and changing the URL if needed), all you need to do is change this dropdown to Telesto:
 
 ![Telesto Marks](Telesto-Marks.png)
 

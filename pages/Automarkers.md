@@ -24,13 +24,26 @@ This page covers general setup of automarks, as well as information on how to ma
 
 ![Automarkers Config Panel](auto-marks.png)
 
-Automarkers in Triggevent can use classic-style macros, or [Telesto](Telesto-Support.md). Telesto-based
+Automarkers in Triggevent can use classic-style macros, [Telesto](Telesto-Support.md), or [PostNamazu](PostNamazu.md). 
+PostNamazu and Telesto-based
 automarks can use any available marker (attack, bind, ignore, shapes). Macro-based markers will only
 work for applying sequential 'attack' markers (e.g. attack1, attack2, and attack3 for UWU Titan Gaols).
 
-Generally, Telesto is the preferred method, but I will go over both options.
+The option to use Macros is mostly provided for users who wish to quickly and painlessly switch from
+an existing solution that also uses keyboard macros. Telesto is generally preferred, but PostNamazu
+may soon become the preferred method.
+
+## Telesto Setup
+
+Follow the instructions on the [Telesto Support](Telesto-Support.md) page. There are no other settings needed.
+
+## PostNamazu Setup
+
+Follow the instructions on the [PostNamazu Support](PostNamazu.md) page. There are no other settings needed.
 
 ## Macro Setup
+
+Remember - macros are NOT the preferred way. This is provided for legacy compatibility!
 
 To set up the gaol macros (or whatever you plan to use automarkers for), create eight macros of this form:
 
@@ -75,15 +88,21 @@ Then, put these nine macros on a hotbar, and bind the bar to either Numpad1-9, o
 automarker setup page (shown above), uncheck "Use Telesto", and check or uncheck "Use F1-F9" based on which
 hotkeys you'd rather use.
 
-## Telesto Setup
-
-Follow the instructions on the [Telesto Support](Telesto-Support.md) page. There are no other settings needed.
-
 ## Duty-Specific Setup
 
 Once you have either Telesto or macros set up, you'll want to make sure you have enabled and configured the
 specific automark triggers you wish to use. For UWU Titan Gaol automarks, see the [Titan Jail](Titan-Jail.md) page.
 For DSR Wroth Flames, visit the [Dragonsong's Reprise](Dragonsong-Triggers.md) page.
+
+# Testing Automarkers
+
+To make sure markers work, you can use the command `/e c:samtest attack 1`. This should mark yourself with an attack marker.
+This should work for all automark options.
+
+You can also test the ability to drop specific markers (PostNamazu or Telesto only - not for Macros!) with
+`/e c:samtest bind1 1` to place the Chain 1 marker on yourself. This works with other marker types, such as
+`circle` or `ignore2`. Even if your game client calls them something else, the English names for the markers
+should be used, and Triggevent will translate it if needed.
 
 # Making your own Automarks using Easy Triggers
 

@@ -12,11 +12,12 @@ step back a bit and completely rethink things.
 
 ## Current Trigger Status
 
+- [The Omega Protocol](/pages/triggers/The-Omega-Protocol-Ultimate.md): Done
 - [Abyssos](/pages/triggers/Abyssos-Triggers.md): Done
 - [Dragonsong's Reprise](/pages/Dragonsong-Triggers.md): Done
 - [Another Sil'Dihn Subterrane](/pages/triggers/Sildihn-Triggers.md) Criterion/Savage: Done
 
-### Dragonsong's Reprise (aka Dragonsong War/Dragonsong Ultimate) Trigger Status: Done!
+New: [PostNamazu](/pages/PostNamazu.md) provides a third option for automarkers! All existing automarks work with it!
 
 Code documentation (auto-generated) is now
 available [here](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) (replace `master` in the
