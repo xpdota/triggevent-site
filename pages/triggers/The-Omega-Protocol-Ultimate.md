@@ -18,13 +18,19 @@ Like every duty, triggers come from one of a few places:
 tab out, search for an event, and have a trigger made in a few clicks. Then, after the raid
 night, I can turn them into fully blown triggers in the codebase, and release them to the public.
 
-#2 and #3 are where you can help. If you happen to know Java, or at least want to learn, you can
-submit a [pull request](https://github.com/xpdota/event-trigger/pulls) with new triggers. If you
-made any Easy Triggers, you can also send them my way, and I can put them in the codebase. Lastly,
-even if you don't make any triggers, log files are much appreciated, especially if there's also
-a VoD to go along with it. You can post them on the 
-[discussions](https://github.com/xpdota/event-trigger/discussions) area, or send them private
-via discord (xp#0001).
+[//]: # (#2 and #3 are where you can help. If you happen to know Java, or at least want to learn, you can)
+
+[//]: # (submit a [pull request]&#40;https://github.com/xpdota/event-trigger/pulls&#41; with new triggers. If you)
+
+[//]: # (made any Easy Triggers, you can also send them my way, and I can put them in the codebase. Lastly,)
+
+[//]: # (even if you don't make any triggers, log files are much appreciated, especially if there's also)
+
+[//]: # (a VoD to go along with it. You can post them on the )
+
+[//]: # ([discussions]&#40;https://github.com/xpdota/event-trigger/discussions&#41; area, or send them private)
+
+[//]: # (via discord &#40;https://discord.gg/jxk24jC66r&#41;.)
 
 
 Without further ado, here's what's currently available:
