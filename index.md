@@ -185,7 +185,7 @@ I put most of my upcoming/desired features on the [project board](https://github
 Should you require any assistance, you can:
 
 - [File a bug](https://github.com/xpdota/event-trigger/issues)
-- Ask on Discord (https://discord.gg/jxk24jC66r - make sure we have a mutual server since I get a lot of spam friend requests)
+- Ask on [Discord](https://discord.gg/jxk24jC66r)
 
 # Site Map
 
