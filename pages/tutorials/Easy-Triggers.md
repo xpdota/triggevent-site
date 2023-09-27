@@ -51,6 +51,11 @@ An easy trigger consists of three parts:
 3. Actions: What the trigger should do when a matching event is found. Some actions can contain
    actions and conditions of their own, such as the conditional action.
 
+## Concurrency Mode
+
+By default, the 'block' [concurrency mode](/pages/docs/Sequential-Triggers.md#concurrency-mode) is used. You can change it via the
+concurrency dropdown.
+
 # Examples
 
 ## Simple Example
@@ -103,4 +108,5 @@ result in an echo message indicating the ability you're casting into chat:
 
 ![Easy Trigger Groovy Example](Easy-Trigger-Groovy-Example.png)
 
-This makes it easy to write [Scripted Automarkers](../Automarkers.md#making-your-own-automarks-with-scripts)
+This makes it easy to write [Scripted Automarkers](../Automarkers.md#making-your-own-automarks-with-scripts), though you can
+also [write the entire trigger in Groovy](/pages/groovy/Groovy-Scripting.md).

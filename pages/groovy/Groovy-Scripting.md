@@ -79,6 +79,8 @@ groovyTriggers.add {
 }
 ```
 
+### Sequential Triggers
+
 Here's a more in-depth example. This triggers when you start casting Broil IV. It will immediately call out TTS "foo",
 and if you have the callout overlay enabled, will display a rapidly-changing number showing you how many milliseconds
 are left on the cast bar, with the text having a cyan color.
@@ -91,6 +93,8 @@ remain there for 1000 milliseconds (1 second).
 groovyTriggers.add {
     // Name should be unique
     named "Sequential Trigger Test"
+    // Allow multiple concurrent invocations
+    concurrency concurrent
     // Start on casting Broil IV
     when { AbilityCastStart acs -> acs.abilityIdMatches(0x6509) }
     sequence { e1, s ->
@@ -107,6 +111,8 @@ groovyTriggers.add {
 }
 ```
 
+By default, the 'block' [concurrency mode](/pages/docs/Sequential-Triggers.md#concurrency-mode) is used. You can change it by adding
+`concurrency block`, `concurrency replace`, or `concurrency concurrent`.
 
 ## Injecting Your Own Globals
 

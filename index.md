@@ -223,4 +223,6 @@ Should you require any assistance, you can:
     - [Finding Percentages of Vulns/Buffs/Etc](/pages/tutorials/Damage-Down-Up.md) - How to find damage up/damage down/vuln/etc percentages in a log.
 - Guides:
     - [Migration Guide](/pages/Migrating-From-Triggernometry.md)
+- More Documentation:
+    - [Sequential Triggers](/pages/docs/Sequential-Triggers.md)
 
