@@ -57,7 +57,7 @@ else {
 
 Your ACT should play a TTS message: either "(your current job) is a healer", or "(your current job) is not a healer".
 
-## Triggers
+# Triggers
 
 You can now do full-blown triggers from within a Groovy script.
 
@@ -79,9 +79,9 @@ groovyTriggers.add {
 }
 ```
 
-### Sequential Triggers
+# Sequential Triggers
 
-Here's a more in-depth example. This triggers when you start casting Broil IV. It will immediately call out TTS "foo",
+Here's a more in-depth trigger. This triggers when you start casting Broil IV. It will immediately call out TTS "foo",
 and if you have the callout overlay enabled, will display a rapidly-changing number showing you how many milliseconds
 are left on the cast bar, with the text having a cyan color.
 
@@ -113,7 +113,7 @@ groovyTriggers.add {
 }
 ```
 
-#### Callouts
+## Callouts
 
 Within triggers, you have some neat tools that you can use to build callouts. You can simply write `callout "foo"` to make
 a simple text and TTS callout. However, you can also do this in long form if you need more control:
@@ -154,7 +154,7 @@ callout {
 }
 ```
 
-##### Callout Lifecycle
+## Callout Lifecycle
 
 By default, a callout will last 5 seconds and then it will be removed. However, there are numerous alternatives:
 ```groovy
@@ -220,7 +220,7 @@ sequence { e1, s ->
 By default, the 'block' [concurrency mode](/pages/docs/Sequential-Triggers.md#concurrency-mode) is used. You can change it by adding
 `concurrency block`, `concurrency replace`, or `concurrency concurrent`.
 
-## Injecting Your Own Globals
+# Injecting Your Own Globals
 
 You can write to the global namespace by using `globals.varName = value`. This allows you to do things like 
 [Custom Search Filters](https://github.com/xpdota/event-trigger/wiki/Groovy-Examples#custom-search-filters) or
