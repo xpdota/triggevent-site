@@ -225,4 +225,5 @@ Should you require any assistance, you can:
     - [Migration Guide](/pages/Migrating-From-Triggernometry.md)
 - More Documentation:
     - [Sequential Triggers](/pages/docs/Sequential-Triggers.md)
-
+- Other Projects:
+    - Try my new [Gear Planner](https://xivgear.app/), now with built-in DPS simulations for healer classes!
