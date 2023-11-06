@@ -138,8 +138,14 @@ Here's an example for TOP P3 transition (sniper cannon):
 // Define priority
 prio = [Job.SCH, Job.DRK, Job.MNK, Job.DRG, Job.DNC, Job.SMN, Job.GNB, Job.SGE]
 
+// This is just to make the syntax more concise.
+// If you would rather call amHelper.mark directly from within your trigger, you'll
+// need to write `this.amHelper.mark`
 def mark(player, sign) {
-	eventMaster.pushEvent(new SpecificAutoMarkRequest(player, sign))
+	amHelper.mark {
+		target player
+		with sign
+	}
 }
 
 // Define our function
@@ -155,14 +161,12 @@ def sniperAM(dryRun = false) {
 	hpSniper = []
 	nothing = []
 	// Categorize players according to their debuff
-	party.each { member -> 
+	party.each { member ->
 		if (statusEffectRepository.isStatusOnTarget(member, 0xD61)) {
 			sniper += member
-		}
-		else if (statusEffectRepository.isStatusOnTarget(member, 0xD62)) {
+		} else if (statusEffectRepository.isStatusOnTarget(member, 0xD62)) {
 			hpSniper += member
-		}
-		else {
+		} else {
 			nothing += member
 		}
 	}
@@ -177,7 +181,7 @@ def sniperAM(dryRun = false) {
 	}
 	log.info "Sniper AM Done"
 	// For testing, return the values
-	return ["Sniper": sniper.collect{it.name}, "High Power Sniper": hpSniper.collect{it.name}, "Nothing": nothing.collect{it.name}]
+	return ["Sniper": sniper.collect { it.name }, "High Power Sniper": hpSniper.collect { it.name }, "Nothing": nothing.collect { it.name }]
 }
 
 
@@ -187,7 +191,7 @@ groovyTriggers.add {
 	named "Sniper Cannon AM"
 	type BuffApplied
 	when { it.buffIdMatches(0xD61) }
-	sequence { e1, s -> 
+	sequence { e1, s ->
 		s.waitMs(100)
 		sniperAM()
 	}
@@ -216,8 +220,14 @@ import gg.xp.xivsupport.events.triggers.marks.adv.*
 // Define priority
 prio = [Job.SCH, Job.DRK, Job.MNK, Job.DRG, Job.DNC, Job.SMN, Job.GNB, Job.SGE]
 
+// This is just to make the syntax more concise.
+// If you would rather call amHelper.mark directly from within your trigger, you'll
+// need to write `this.amHelper.mark`
 def mark(player, sign) {
-	eventMaster.pushEvent(new SpecificAutoMarkRequest(player, sign))
+  amHelper.mark {
+    target player
+    with sign
+  }
 }
 
 // Define our function
@@ -285,9 +295,15 @@ import gg.xp.xivsupport.events.triggers.marks.adv.*
 
 toClear = []
 
+// This is just to make the syntax more concise.
+// If you would rather call amHelper.mark directly from within your trigger, you'll
+// need to write `this.amHelper.mark`
 def mark(player, sign) {
-	eventMaster.pushEvent(new SpecificAutoMarkRequest(player, sign))
-	toClear += player
+  amHelper.mark {
+    target player
+    with sign
+  }
+  toClear += player
 }
 
 // Define our function
