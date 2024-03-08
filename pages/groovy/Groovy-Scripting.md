@@ -217,7 +217,7 @@ sequence { e1, s ->
 ```
 
 
-By default, the 'block' [concurrency mode](/pages/docs/Sequential-Triggers.md#concurrency-mode) is used. You can change it by adding
+By default, the 'block' [concurrency mode](../docs/Sequential-Triggers.md#concurrency-mode) is used. You can change it by adding
 `concurrency block`, `concurrency replace`, or `concurrency concurrent`.
 
 # Injecting Your Own Globals

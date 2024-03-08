@@ -53,7 +53,7 @@ An easy trigger consists of three parts:
 
 ## Concurrency Mode
 
-By default, the 'block' [concurrency mode](/pages/docs/Sequential-Triggers.md#concurrency-mode) is used. You can change it via the
+By default, the 'block' [concurrency mode](../docs/Sequential-Triggers.md#concurrency-mode) is used. You can change it via the
 concurrency dropdown.
 
 # Examples
