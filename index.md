@@ -206,6 +206,7 @@ Should you require any assistance, you can:
     - [Cooldown Tracker](/pages/Cooldown-Tracker.md) - Personal + Party Cooldown tracker.
     - [DoT Tracker](/pages/Dot-Tracker.md) - Multi-target DoT tracker + DoT tick tracker.
     - [Timeline Customization](/pages/Timeline-Customization.md) - Triggevent's extensions of Cactbot Timelines.
+      - [Timeline Recording]
     - [General Automarker Info](/pages/Automarkers.md) - General info for automarks (Wroth Flames and UWU auto markers have their own pages below).
     - [Easy Triggers](/pages/tutorials/Easy-Triggers.md) - Short guide for easy triggers.
     - [Combat Log/Events Tab](/pages/tutorials/Combat-Log-Events-Tab.md) - Events Tab, which functions as a combat log of sorts.

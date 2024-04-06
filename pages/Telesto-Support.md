@@ -65,7 +65,7 @@ This will be sufficient for anything where the markers should be placed on anyon
 
 Here is an example:
 
-![Thunderstruck Marker Trigger](/pages/tutorials/Thunderstruck-Mark.png)
+![Thunderstruck Marker Trigger](tutorials/Thunderstruck-Mark.png)
 
 ### As a Trigger Developer
 

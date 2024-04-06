@@ -108,6 +108,8 @@ To remove all customizations, you can click "Delete All Customizations" which wi
 
 # Example: Adding Mitigation to a Timeline
 
+New: You can [record](tutorials/Timeline-Recording.md) mitigations from an existing log!
+
 Here's how you could add a trigger to your timeline to call out a mitigation usage:
 
 1. Locate the fight you wish to edit the timeline for in the timeline list. Or, if you are already

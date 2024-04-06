@@ -139,7 +139,7 @@ If you have an actual log file handy, you can preview what the plugin would have
 
 You should see something like this (may vary depending on whether you're using Telesto or macros):
 
-![FFXIV UWU Titan Gaols in Log File](/pages/UWU Gaols in Log File.png)
+![FFXIV UWU Titan Gaols in Log File](UWU Gaols in Log File.png)
 
 The "AutoMarkRequest" lines indicate which players received jails, sorted by their priority order.
 The <8>, <1>, and <4> represent which party slots it would have marked, while the lines below that show the actual

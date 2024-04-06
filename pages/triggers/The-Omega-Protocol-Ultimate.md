@@ -14,7 +14,7 @@ Like every duty, triggers come from one of a few places:
 4. Looking at triggers added to other projects, such as Cactbot
 
 #1 takes time. I have to prog the fight just like everyone else. I typically make use of
-[Easy Triggers](/pages/tutorials/Easy-Triggers.md) during the raid, since it is very easy to
+[Easy Triggers](../tutorials/Easy-Triggers.md) during the raid, since it is very easy to
 tab out, search for an event, and have a trigger made in a few clicks. Then, after the raid
 night, I can turn them into fully blown triggers in the codebase, and release them to the public.
 
