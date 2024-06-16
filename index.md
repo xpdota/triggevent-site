@@ -223,6 +223,7 @@ Should you require any assistance, you can:
 - General Log Documentation:
     - [Finding Percentages of Vulns/Buffs/Etc](/pages/tutorials/Damage-Down-Up.md) - How to find damage up/damage down/vuln/etc percentages in a log.
 - Guides:
+    - [Ninth Manning Tips](/pages/ninth/Ninth-Man-Usage.md) - Tips to help you 9th man using Triggevent.
     - [Migration Guide](/pages/Migrating-From-Triggernometry.md)
 - More Documentation:
     - [Sequential Triggers](/pages/docs/Sequential-Triggers.md)
