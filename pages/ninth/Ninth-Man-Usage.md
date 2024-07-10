@@ -41,6 +41,11 @@ Restart Triggevent, and verify on the home screen that it is connected:
 
 ![Connected Successfully](Connected.png)
 
+### Static Domain
+
+The ngrok URL will change every time you launch ACT, unless you use a static domain. NGrok provides one static
+domain per user for free. 
+
 ## Port Forwarding
 
 If the raid member is going to use plain port forwarding, the procedure is similar.

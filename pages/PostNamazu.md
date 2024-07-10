@@ -34,17 +34,40 @@ The PnGameCommand event class allows for commands to be sent to the game. It wor
 
 # Setup
 
+## New Method
+
 1. Install PostNamazu like any other ACT plugin
    - In the ACT main window, navigate to Plugins > Plugin Listing
    - Click "Browse..." and find the PostNamazu.dll file you downloaded
    - Click "Add/Enable Plugin"
+   - Make sure it is after (below) the FFXIV plugin and OverlayPlugin
+2. In Triggevent, in Plugins Settings > PostNamazu:
+   - Change "Mode" to "Via OverlayPlugin"
+   - Click the "Test" button and make sure it works (the game will need to be running and 
+     you will need to be logged in to your character).
+3. Under the AutoMark tab, switch to PostNamazu:
+
+![PostNamazu AM Setup](PostNamazu_AM_Setup.png)
+
+4. In game, run `/e c:samtest bind1 1` and make sure that the Chain 1 marker appeared on yourself.
+
+## Old Method
+
+
+1. Install PostNamazu like any other ACT plugin
+    - In the ACT main window, navigate to Plugins > Plugin Listing
+    - Click "Browse..." and find the PostNamazu.dll file you downloaded
+    - Click "Add/Enable Plugin"
+    - Make sure it is after (below) the FFXIV plugin and OverlayPlugin
 2. Navigate to the new tab
 3. Click the "Start" button, and check the auto-start checkbox, highlighted in red boxes:
 
 ![PostNamazu Setup Help](PostNamazu_Setup.png)
 
-4. In Triggevent, in Plugins Settings > PostNamazu, click the "Test" button and make sure it works 
-    (the game will need to be running and you will need to be logged in to your character)
+4. In Triggevent, in Plugins Settings > PostNamazu:
+    - Change "Mode" to "HTTP Connection"
+    - Click the "Test" button and make sure it works (the game will need to be running and
+      you will need to be logged in to your character).
 5. Under the AutoMark tab, switch to PostNamazu:
 
 ![PostNamazu AM Setup](PostNamazu_AM_Setup.png)
