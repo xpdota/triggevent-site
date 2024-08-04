@@ -12,10 +12,13 @@ step back a bit and completely rethink things.
 
 ## Current Trigger Status
 
+- Arcadion:
+  - M1S: Complete with some issues
+  - M2S: Complete
+  - M3S: In Progress
+  - M4S: Complete
 - [The Omega Protocol](/pages/triggers/The-Omega-Protocol-Ultimate.md): Done
-- [Abyssos](/pages/triggers/Abyssos-Triggers.md): Done
 - [Dragonsong's Reprise](/pages/Dragonsong-Triggers.md): Done
-- [Another Sil'Dihn Subterrane](/pages/triggers/Sildihn-Triggers.md) Criterion/Savage: Done
 
 New: [PostNamazu](/pages/PostNamazu.md) provides a third option for automarkers! All existing automarks work with it!
 
