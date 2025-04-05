@@ -12,15 +12,13 @@ step back a bit and completely rethink things.
 
 ## Current Trigger Status
 
-- Arcadion:
-  - M1S: Complete with some issues
-  - M2S: Complete
-  - M3S: In Progress
-  - M4S: Complete
+- Arcadion R5-8:
+  - R5S: In Progress
+  - R6S: In Progress
+  - R7S: Mostly Complete
+  - R8S: Complete through Phase 1
 - Futures Rewritten Ultimate: Complete
 - Cloud of Darkness Chaotic: Complete
-
-New: [PostNamazu](/pages/PostNamazu.md) provides a third option for automarkers! All existing automarks work with it!
 
 Code documentation (auto-generated) is now
 available [here](https://xpdota.github.io/event-trigger/master/javadoc/allclasses-index.html) (replace `master` in the
@@ -55,16 +53,6 @@ tick timing right on the bar.
 
 Shows remaining cooldown as well as active time. There is a separate overlay for personal cooldowns as well as
 party cooldowns.
-
-### [Jail Plugin](/pages/Titan-Jail.md)
-
-Triggevent has a reliable and powerful Titan Jail plugin. You choose a priority by dragging and dropping jobs - no
-typing names or sharing xml files. It supports personal callouts, as well as automarks, and the automarks can use
-either macros or Telesto.
-
-![Jail Plugin](https://user-images.githubusercontent.com/14287379/142813080-c44d1ff7-873b-4119-9c15-1212c9e31133.png)
-
-There is more information about the Gaol plugin [here](pages/Titan-Jail.md).
 
 ### Triggers
 
@@ -158,10 +146,10 @@ I put most of my upcoming/desired features on the [project board](https://github
     - Ever wanted to put your entire mit plan, with icons, on a timeline? Now you can.
 * Better customizability of callouts without needing to edit triggers
 * Extremely easy to make basic triggers - making triggers doesn't require any knowledge of log lines nor regular
-  expressions (and shouldn't -
-  [because it was never the right tool for the job](https://github.com/xpdota/event-trigger/wiki/Why-is-Regex-Bad-for-Triggers%3F)!)
+  expressions
     - Most of it can be done by right clicking on the event you want to make a trigger from, and selecting "Make Easy
       Trigger". It's not perfect all the time, but you can edit the trigger if anything is off.
+- Scripted Triggers for more advanced use cases
 
 ### For Developers and Power Users
 
