@@ -16,7 +16,7 @@ step back a bit and completely rethink things.
   - R5S: In Progress
   - R6S: In Progress
   - R7S: Mostly Complete
-  - R8S: Complete through Phase 1
+  - R8S: Complete
 - Futures Rewritten Ultimate: Complete
 - Cloud of Darkness Chaotic: Complete
 
