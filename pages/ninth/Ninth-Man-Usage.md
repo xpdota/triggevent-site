@@ -16,10 +16,60 @@ the former option.
 
 First start by following the [Standard Installation Instructions](https://github.com/xpdota/event-trigger/wiki/Installation-and-Setup).
 However, you do not need to have your local ACT set up. Only the raid member you will be connecting to needs to set it up.
-Then, have one of your raid members either set up NGrok in their OverlayPlugin, or set up a normal port forwarding.
+Then, have one of your raid members expose their WebSocket port using one of three methods: CloudFlare tunnel (recommended),
+port forwarding, or NGrok (not recommended).
 Finally, make a few changes to your Triggevent configuration.
 
-## NGrok
+## CloudFlare Tunnel
+
+CloudFlare tunnel is free to use and does not have a bandwidth limit.
+
+First, download and run the latest installer (`cloudflared-windows-amd64.msi` for windows) from the [releases](https://github.com/cloudflare/cloudflared/releases) page.
+
+In ACT, go to Plugins > OverlayPlugin WSServer > Stream/Local Overlay. Make note of the port, and be sure to click the "Start" button. If you already have Triggevent running,
+you probably already did this.
+Leave SSL disabled, unless you know you need it for another application.
+
+Then, run cloudflare tunnel by running the following command in a cmd or Powershell window:
+```powershell
+cloudflared tunnel --url http://127.0.0.1:10501/
+```
+
+In the command output, you will see a URL that looks like this: `https://<random-string>.trycloudflare.com/`.
+In Triggevent, you will want to change the URL a bit, to `wss://<random-string>.trycloudflare.com/ws`, and enter it under Advanced > WebSocket.
+Note the `wss://` protocol rather than `https://`, and the `/ws` path.
+
+Now, you will most likely want to uncheck 'Enable TTS' and 'Enable Sounds'. Otherwise, your local triggers will send
+callouts to the remote ACT.
+
+Restart Triggevent, and verify connection on the home screen.
+
+To shut down the tunnel, press Ctrl-C in the cmd/powershell window and then cloud the window.
+
+## Port Forwarding
+
+If the raid member is going to use plain port forwarding, the procedure is similar.
+
+In ACT, go to Plugins > OverlayPlugin WSServer > Stream/Local Overlay. Change the IP Address to `*`.
+Leave SSL disabled, unless you know you need it for another application.
+Set up port forwarding on the router.
+
+Then, in Triggevent, do the same procedure as with NGrok, but use a URL that looks like this:
+
+`ws://1.2.3.4:10501/ws`
+
+Where the first part is `ws://` if not using SSL, or `wss://` if you are. The next part, `1.2.3.4` should be replaced with the public
+IP address of the raid member. `10501` is the public port you are using (if different from the internal port - unlikely, but possible).
+
+Now, you will most likely want to uncheck 'Enable TTS' and 'Enable Sounds'. Otherwise, your local triggers will send
+callouts to the remote ACT.
+
+Restart Triggevent, and verify connection on the home screen.
+
+## NGrok (Not Recommended)
+
+Note: NGrok is not recommended for typical use, because it has a bandwidth limit of only 1GB/month without a paid plan.
+You can burn through 1GB in less than a day of raiding!
 
 If you are using NGrok, then in ACT, navigate to Plugins > OverlayPlugin WSServer > Shared Overlay. After entering the NGrok
 token and clicking "Start", you should see something like this in the output:
@@ -44,24 +94,7 @@ Restart Triggevent, and verify on the home screen that it is connected:
 ### Static Domain
 
 The ngrok URL will change every time you launch ACT, unless you use a static domain. NGrok provides one static
-domain per user for free. 
-
-## Port Forwarding
-
-If the raid member is going to use plain port forwarding, the procedure is similar.
-
-In ACT, go to Plugins > OverlayPlugin WSServer > Stream/Local Overlay. Change the IP Address to `*`.
-Leave SSL disabled, unless you know you need it for another application.
-Set up port forwarding on the router.
-
-Then, in Triggevent, do the same procedure as with NGrok, but use a URL that looks like this:
-
-`ws://1.2.3.4:10501/ws`
-
-Where the first part is `ws://` if not using SSL, or `wss://` if you are. The next part, `1.2.3.4` should be replaced with the public
-IP address of the raid member. `10501` is the public port you are using (if different from the internal port - unlikely, but possible).
-
-Restart Triggevent, and verify connection on the home screen. Don't forget to disable TTS and audio.
+domain per user for free.
 
 # Ninth Manning Capabilities
 
